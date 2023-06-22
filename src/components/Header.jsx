@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import logo from './dbatuForum.jpg'
+import logo from './images/dbatuForum.jpg'
 import {FaBars} from 'react-icons/fa'
 import { NavbarSm } from './Navbar';
 
 const Header = () => {
-    const [navbarVisible,setNavbarVisible] = useState(true);
+    const [navbarVisible,setNavbarVisible] = useState(false);
   return (
     <>
         <div className={`lg:hidden absolute bg-white z-20 h-screen w-screen transition-all ease-in-out duration-200 ${navbarVisible?'translate-x-0':'-translate-x-full'}`}>
