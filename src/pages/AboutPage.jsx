@@ -16,17 +16,16 @@ const AboutPage = () => {
     const params = useParams();
   return (
     <div>
-        {params.info === 'about-dfiie' && <AboutDFIIE />}
-        {params.info === '' && <BoardOfDirector />}
-        {params.info === '' && <DFIIEObjective />}
-        {params.info === '' && <DirectorMessage />}
-        {params.info === '' && <FocusArea />}
-        {params.info === '' && <IncubatedStartUps />}
-        {params.info === '' && <Team />}
-        {params.info === '' && <TechAdvisorCommity />}
-        {params.info === '' && <TechAdvisorCommity />}
-        {params.info === '' && <VCMessage />}
-        {params.info === '' && <VisionAndMission />}
+        {params.info === 'dfiie' && <AboutDFIIE />}
+        {params.info === 'director' && <BoardOfDirector />}
+        {params.info === 'objective' && <DFIIEObjective />}
+        {params.info === 'director' && <DirectorMessage />}
+        {params.info === 'focusareas' && <FocusArea />}
+        {params.info === 'startups' && <IncubatedStartUps />}
+        {params.info === 'team' && <Team />}
+        {params.info === 'committee' && <TechAdvisorCommity />}
+        {params.info === 'vcMessage' && <VCMessage />}
+        {params.info === 'vision&Mission' && <VisionAndMission />}
     </div>
   )
 }

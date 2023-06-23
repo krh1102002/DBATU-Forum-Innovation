@@ -1,21 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {BiChevronDown, BiChevronUp} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
 import logo from './images/dbatuForum.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import './style.css'
+import { elements } from '../Data/NavbarData'
 
-export const NavbarSm = ({onClose}) =>{
-    const elements = [
-        {name:"Home"},
-        {name:"About", elements:["About DFIIE", "Vision & Mission"]},
-        {name:"Stakeholder", elements:["Government","Investors"]},
-        {name:"Support", elements:["Legal Support","Technical Support"]},
-        {name:"Events", elements:["WorkShop & Seminars"]},
-        {name:"News & Announcement"},
-        {name:"Contact"},
-        {name:"Gallery"}
-    ]
+export const NavbarSm = ({onClose,setNavbarVisible}) =>{
+
     const [visible,setVisible] = useState(-1)
+    const handleVisible = (idx) =>{
+        if(idx === visible){
+            setVisible(-1)
+        }else{
+            setVisible(idx)
+        }
+    }
     return(
         <>
         <div className='flex items-center justify-between px-2 py-1.5'>
@@ -37,15 +37,15 @@ export const NavbarSm = ({onClose}) =>{
         <div className='flex flex-col gap-2.5 py-2 px-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' key={element.name}>
-                <div className='flex gap-1 z-20 items-center justify-between text-lg font-medium'>
-                    <span>{element.name}</span>
-                    {visible === idx ? <span onClick={() => setVisible(-1)}><BiChevronUp size={24}/></span>: element.elements && <span onClick={() => setVisible(idx)}><BiChevronDown size={24}/></span>}
+                <div className='flex gap-1 z-20 items-center justify-between text-lg font-medium' onClick={() => handleVisible(idx)}>
+                    <Link to={element?.path}>{element.name}</Link>
+                    {visible === idx ? <span ><BiChevronUp size={24}/></span>: element.items && <span ><BiChevronDown size={24}/></span>}
                 </div>
-                {element.elements && <div className={`flex flex-col items-start justify-center gap-2 w-full transition-all duration-200 ease-linear overflow-hidden ${visible === idx?'translate-y-0':'-translate-y-[50%] h-0'}`}>
-                    {element?.elements?.map((ele,idx) =>(
-                        <div className=' w-full p-1.5 font-medium' key={idx}>
-                            <span>{ele}</span>
-                        </div>
+                {element.items && <div className={`flex flex-col items-start justify-center gap-2 w-full transition-all duration-200 ease-linear overflow-hidden ${visible === idx?'h-full':' h-0'}`}>
+                    {element?.items?.map((ele,idx) =>(
+                        <Link to={ele.path} className=' w-full p-1.5 font-medium' key={idx} onClick={() => setNavbarVisible(false)}>
+                            <span>{ele.name}</span>
+                        </Link>
                     ))}
                 </div>}
             </div>
@@ -56,31 +56,39 @@ export const NavbarSm = ({onClose}) =>{
 }
 
 const Navbar = () => {
-    const elements = [
-        {name:"Home", path:"/"},
-        {name:"About", elements:["About DFIIE", "Vision & Mission"]},
-        {name:"Stakeholder", elements:["Government","Investors"]},
-        {name:"Support", elements:["Legal Support","Technical Support"]},
-        {name:"Events", elements:["WorkShop & Seminars"]},
-        {name:"News & Announcement"},
-        {name:"Contact", path:'/contact'},
-        {name:"Gallery"}
-    ]
+
     const [visible,setVisible] = useState(-1)
+    const {pathname} = useLocation()
+    const [active,setActive] = useState("");
+    useEffect(() =>{
+        let i = 1;
+        let currActive = "";
+        while(pathname.charAt(i) !== '/' && i<pathname.length){
+            currActive += pathname.charAt(i);
+            i++;
+        }
+        if(currActive.length === 0)
+            setActive("home")
+        else if(currActive === 'news&announcement'){
+            setActive('news & announcement')
+        }
+        else
+            setActive(currActive)
+    },[pathname])
 
     return(
         <div className='lg:flex sticky z-10 top-0 bg-white hidden items-center justify-center gap-2.5 py-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
-                <div className='flex gap-1 items-center text-lg z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white hover:border-blue-800 hover:text-blue-800'>
+                <div className={`flex gap-1 items-center text-lg z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white border-hover hover:text-blue-800 ${active === element.name.toLowerCase()?'text-blue-800':''}`}>
                     <Link to={element?.path}>{element.name}</Link>
-                    {element?.elements && <span><BiChevronDown size={24}/></span>}
+                    {element?.items && <span><BiChevronDown size={24}/></span>}
                 </div>
-                {element.elements && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[30px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
-                    {element?.elements?.map((ele) =>(
-                        <div className=' w-full p-1.5 hover:bg-gray-300 hover:bg-opacity-30 font-medium'>
-                            <span>{ele}</span>
-                        </div>
+                {element.items && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[32px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
+                    {element?.items?.map((ele) =>(
+                        <Link to={ele.path} className='w-full p-1.5 hover:bg-gray-400 hover:bg-opacity-30 font-medium'>
+                            <span>{ele.name}</span>
+                        </Link>
                     ))}
                 </div>}
             </div>

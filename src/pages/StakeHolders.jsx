@@ -7,17 +7,19 @@ import Investors from '../components/StakeHolders/Investors';
 import RAndInstitution from '../components/StakeHolders/RAndInstitution';
 import ValuedPartner from '../components/StakeHolders/ValuedPartner';
 import MainLayout from '../layout/Main.layout';
+import Mentors from '../components/StakeHolders/Mentors';
 
 const StakeHolders = () => {
   const params = useParams();
   return (
     <div>
-      {params.info === '' && <Academia />}
-      {params.info === '' && <EcosystemEnablers />}
-      {params.info === '' && <Government />}
-      {params.info === '' && <Investors />}
-      {params.info === '' && <RAndInstitution />}
-      {params.info === '' && <ValuedPartner />}
+      {params.info === 'acdemia' && <Academia />}
+      {params.info === 'ecosystem' && <EcosystemEnablers />}
+      {params.info === 'government' && <Government />}
+      {params.info === 'investors' && <Investors />}
+      {params.info === 'institutions' && <RAndInstitution />}
+      {params.info === 'partner' && <ValuedPartner />}
+      {params.info === 'mentors' && <Mentors />}
     </div>
   )
 }

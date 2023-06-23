@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
 import './App.css';
 import HomePage from './pages/HomePage';
 import Contact from './pages/Contact';
@@ -20,7 +21,7 @@ function App() {
           <Route path='/news&announcement' element={<NewsAndAnnouncement />} />
           <Route path='/about/:info' element={<AboutPage />} />
           <Route path='/events/:info' element={<Events />} />
-          <Route path='/stakeHolder/:info' element={<StakeHolders />} />
+          <Route path='/stakeHolders/:info' element={<StakeHolders />} />
           <Route path='/support/:info' element={<Support />} />
         </Routes>
       </BrowserRouter>

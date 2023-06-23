@@ -16,16 +16,16 @@ const Support = () => {
     const params = useParams();
   return (
     <div>
-        {params.info === '' && <FundingSupport />}
-        {params.info === '' && <HRSupport />}
-        {params.info === '' && <IPSupport />}
-        {params.info === '' && <LegalSupport />}
-        {params.info === '' && <MarketConnect />}
-        {params.info === '' && <MentoringSupport />}
-        {params.info === '' && <NetworkingSupport />}
-        {params.info === '' && <ProductDesigning />}
-        {params.info === '' && <PrototypeDevSupport />}
-        {params.info === '' && <TechnicalSupport />}
+        {params.info === 'funding' && <FundingSupport />}
+        {params.info === 'hr' && <HRSupport />}
+        {params.info === 'ip' && <IPSupport />}
+        {params.info === 'legal' && <LegalSupport />}
+        {params.info === 'market' && <MarketConnect />}
+        {params.info === 'mentoring' && <MentoringSupport />}
+        {params.info === 'networking' && <NetworkingSupport />}
+        {params.info === 'product-design' && <ProductDesigning />}
+        {params.info === 'prototype' && <PrototypeDevSupport />}
+        {params.info === 'technical' && <TechnicalSupport />}
     </div>
   )
 }

@@ -14,7 +14,6 @@ export const Ideathon_Hackathon_Stretethon = [
 	"A Hackathon is a coding event where participants work together in teams to create new software, applications, or hardware projects within a limited time frame. The focus is on building a functional prototype or product that can be presented and evaluated at the end of the event.",
 	"A Stratethon is a strategic planning event where participants work together to develop new business strategies, identify growth opportunities, and solve complex problems related to business operations, marketing, and product development.",
     "All of these events require collaboration, creativity, and problem-solving skills, and they can be used to tackle a wide range of challenges, from social and environmental issues to business problems and technological innovation."
-
 ]
 export const Webinar = [
     "Webinars are a valuable tool for Incubation Centres to engage with align community, share knowledge and expertise, and promote centre services. The topics of webinars at a DFIIE can vary depending on the interests and needs of the audience, but here are some suggestions:",

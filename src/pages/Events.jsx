@@ -12,12 +12,12 @@ const Events = () => {
   const params = useParams();
   return (
     <div>
-      {params.info === '' && <Conferences />}
-      {params.info === '' && <Hackathon />}
-      {params.info === '' && <InvestorMeet />}
-      {params.info === '' && <StartUpMeet />}
-      {params.info === '' && <Webinars />}
-      {params.info === '' && <WorkShopAndSeminars />}
+      {params.info === 'conferences' && <Conferences />}
+      {params.info === 'ideathon-hackathon' && <Hackathon />}
+      {params.info === 'investor-meet' && <InvestorMeet />}
+      {params.info === 'startup' && <StartUpMeet />}
+      {params.info === 'webinars' && <Webinars />}
+      {params.info === 'workshop' && <WorkShopAndSeminars />}
     </div>
   )
 }
