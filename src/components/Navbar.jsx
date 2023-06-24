@@ -18,7 +18,7 @@ export const NavbarSm = ({onClose,setNavbarVisible}) =>{
     }
     return(
         <>
-        <div className='flex items-center justify-between px-2 py-1.5'>
+        <div className='flex items-center justify-between px-2 py-1.5 '>
             <div className='flex items-center gap-2'>
                 <div>
                     <img src={logo} alt='Logo' className='md:h-full w-auto h-[45px]'/>
@@ -41,7 +41,7 @@ export const NavbarSm = ({onClose,setNavbarVisible}) =>{
                     <Link to={element?.path}>{element.name}</Link>
                     {visible === idx ? <span ><BiChevronUp size={24}/></span>: element.items && <span ><BiChevronDown size={24}/></span>}
                 </div>
-                {element.items && <div className={`flex flex-col items-start justify-center gap-2 w-full transition-all duration-200 ease-linear overflow-hidden ${visible === idx?'h-full':' h-0'}`}>
+                {element.items && <div className={`flex flex-col items-start justify-center gap-2 w-full  height-transition ${visible === idx?'h-auto overflow-visible':' h-0 overflow-hidden'}`}>
                     {element?.items?.map((ele,idx) =>(
                         <Link to={ele.path} className=' w-full p-1.5 font-medium' key={idx} onClick={() => setNavbarVisible(false)}>
                             <span>{ele.name}</span>
@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className='lg:flex sticky z-10 top-0 bg-white hidden items-center justify-center gap-2.5 py-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
-                <div className={`flex gap-1 items-center text-lg z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white border-hover hover:text-blue-800 ${active === element.name.toLowerCase()?'text-blue-800':''}`}>
+                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white border-hover hover:text-blue-800 ${active === element.name.toLowerCase()?'text-blue-800':''}`}>
                     <Link to={element?.path}>{element.name}</Link>
                     {element?.items && <span><BiChevronDown size={24}/></span>}
                 </div>

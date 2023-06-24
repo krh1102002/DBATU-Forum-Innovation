@@ -12,7 +12,7 @@ import Mentors from '../components/StakeHolders/Mentors';
 const StakeHolders = () => {
   const params = useParams();
   return (
-    <div>
+    <div className='flex flex-col justify-center flex-1'>
       {params.info === 'acdemia' && <Academia />}
       {params.info === 'ecosystem' && <EcosystemEnablers />}
       {params.info === 'government' && <Government />}

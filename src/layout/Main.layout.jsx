@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 const MainLayout = (Components) => ({...props}) => {
   return (
-    <div className='h-screen flex flex-col'>
+    <div className='h-screen flex flex-col overflow-x-hidden'>
         <Header />
         <Navbar />
         <Components {...props} />

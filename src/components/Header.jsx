@@ -16,8 +16,8 @@ const Header = () => {
                     <img src={logo} alt='Logo' className='md:h-full w-auto h-[45px]'/>
                 </div>
                 <div className='sm:flex flex-col hidden'>
-                    <h1 className='lg:text-2xl md:text-xl text-lg font-semibold text-blue-800 font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIFE)</h1>
-                    <h6 className='lg:text-lg text-sm font-semibold'>Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, Maharashtra - 402301</h6>
+                    <h1 className='lg:text-3xl md:text-xl text-lg font-semibold text-blue-800 font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIIE)</h1>
+                    <h6 className='lg:text-xl text-sm font-semibold'>Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, Maharashtra - 402301</h6>
                 </div>
             </div>
             <div className='lg:hidden block'>

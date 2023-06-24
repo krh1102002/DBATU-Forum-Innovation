@@ -37,7 +37,22 @@
     transform: scaleX(1);
     transform-origin: left;
   }
-  
+.height-transition{
+  transition-duration: 222ms !important;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.background-banner{
+  background-image: url('https://t-hub.co/img/webp/governmentbannerbg1.webp'),url('https://t-hub.co/img/webp/governmentbannerbg2.webp');
+  background-repeat: no-repeat;
+  background-position: 99% 87%, 66% 1%;
+ 
+}
+@media (max-width:767px) {
+  .background-banner{
+    background-position: 95% 35%, -3% 1%;
+    background-size: 40%, 50%;
+  }
+}
 @media (max-width:420px) {
     .swiper{
       max-height: 145px;
