@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Academia from '../components/StakeHolders/Academia';
 import EcosystemEnablers from '../components/StakeHolders/EcosystemEnablers';
@@ -11,6 +11,13 @@ import Mentors from '../components/StakeHolders/Mentors';
 
 const StakeHolders = () => {
   const params = useParams();
+  useEffect(() =>{
+
+    function handleload(){
+        document.documentElement.scrollTo(0,0);
+    }
+    handleload()
+  },[params])
   return (
     <div className='flex flex-col justify-center flex-1'>
       {params.info === 'acdemia' && <Academia />}
