@@ -13,7 +13,7 @@ const AboutDFIIE = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src={dbatuforum} height="318px"alt="About DFIIE" />
+          <img src={dbatuforum} alt="About DFIIE" />
         </div>
       </div>
     </div>

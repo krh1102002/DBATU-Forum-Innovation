@@ -5,18 +5,14 @@ export const aboutDFIIE = [
 ]
 
 export const DfiieObjective = [
-    "To promote innovation and assist start-up companies by establishing and providing physical infrastructure.",
-	"To provide incubation services to innovation and start-up companies by facilitating technology and management consulting services and guidance.",
-	"To promote entrepreneurial activities and create culture of entrepreneurship and innovation leading to start-up companies.",
-	"To build awareness about the importance of entrepreneurship among the students and local community.",
-	"To build a vibrant startup ecosystem, by establishing a network between academia, financial institutions, industries, and other institutes.",
-	"To promote new technology/ knowledge/ innovation-based startups.",
-	"To promote design thinking process among the incubates and provide the platform for speedy commercialization of technology.",
-    "To enhance the domain knowledge / skills to develop the innovative products / services.",
-	"To provide access to resources, Incubators can provide new businesses with access to capital, office space, equipment, and other resources that they may not otherwise be able to afford.",
-	"To foster innovation, Incubators can encourage innovation by providing entrepreneurs with mentorship and other forms of support that can help them develop their ideas.",
-	"To build entrepreneurial capacity, Incubators can help build the skills and knowledge of entrepreneurs, enabling them to grow their businesses and contribute to the broader economy.",
-	"To encourage collaboration and networking, Incubators can provide a platform for entrepreneurs to connect with each other, share knowledge, and form partnerships that can help them grow their businesses."
+    "▪️To promote innovation and assist start-up companies by establishing and providing physical infrastructure.",
+	"▪️To provide incubation services to innovation and start-up companies by facilitating technology and management consulting services and guidance.",
+	"▪️To promote entrepreneurial activities and create culture of entrepreneurship and innovation leading to start-up companies.",
+	"▪️To build awareness about the importance of entrepreneurship among the students and local community.",
+	"▪️To build a vibrant startup ecosystem, by establishing a network between academia, financial institutions, industries, and other institutes.",
+	"▪️To promote new technology/ knowledge/ innovation-based startups.",
+	"▪️To promote design thinking process among the incubates and provide the platform for speedy commercialization of technology.",
+    
 ]
 
 export const vision = [
