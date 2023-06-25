@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <img src={logo} alt="" />
             </div>
-            <div className='flex md:justify-around justify-start gap-6 flex-wrap'>
+            <div className='flex md:justify-around justify-start gap-6 flex-wrap select-none'>
                 {elements.map((ele) => (
                     ele.items && (
                         <div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 ))}
             </div>
             <div className='text-gray-400 text-center'>
-                <span className='flex items-center gap-2 justify-center'>
+                <span className='flex items-center select-none gap-2 justify-center'>
                     <BiCopyright /> DFIIE 2023
                 </span>
             </div>
