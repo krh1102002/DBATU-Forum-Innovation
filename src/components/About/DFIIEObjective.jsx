@@ -13,7 +13,7 @@ const DFIIEObjective = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src={dbatuforum} alt="About DFIIE" />
+          <img src={dbatuforum} width={"358px"} alt="About DFIIE" />
         </div>
       </div>
     </div>

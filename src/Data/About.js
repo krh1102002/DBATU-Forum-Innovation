@@ -22,7 +22,7 @@ export const mission = [
     "To stimulate the establishment and growth of technology-based start-up companies and other compatible businesses. By fulfilling this mission, the incubator would contribute to job creation, and provide for enhanced economic health to the region."
 ]
 
-export const VCMessage = [
+export const vCMessage = [
     "Dear All,",
     "I am delighted to welcome you all to our DBATU Forum of Innovation, Incubation & Enterprise (DFIIE) - Incubation Centre. As the Chairman of the Centre, I am honored to lead a team of dedicated professionals who are passionate about supporting and fostering innovation and entrepreneurship.",
     "Our Incubation Centre provides a platform for tech start-ups to develop and bring their ideas to market. We offer state-of-the-art facilities, access to funding, mentorship, and networking opportunities to help entrepreneurs turn their ideas into successful businesses.",
@@ -30,14 +30,14 @@ export const VCMessage = [
     "We are excited to welcome you to our Incubation Centre and look forward to working with you to bring your ideas to life. Together, we can create a better future through technology.",
     "Best regards,"
 ]
-export const VCData = [
+export const vCData = [
     "Prof. (Dr.) K. V. Kale,",
     "Vice-Chancellor of Dr. Babasaheb Ambedkar Technological University&",
     "Chairman - DBATU Forum of Innovation, Incubation & Enterprise (DFIIE)"
 
 ]
 
-export const DirectorMessage = [
+export const directorMessage = [
     "Dear Entrepreneurs and Innovators,",
     "It is my pleasure to welcome you to our DBATU Forum of Innovation, Incubation & Enterprise (DFIIE). As the Director of DFIIE, I am excited to lead a team of professionals who are dedicated to fostering innovation and entrepreneurship.",
     "Our Incubation Centre provides a supportive environment for start-ups to develop their ideas and turn them into successful businesses. We offer a range of resources, including mentorship, access to funding, and networking opportunities, to help entrepreneurs navigate the challenges of starting a new venture.",
@@ -47,15 +47,16 @@ export const DirectorMessage = [
     "Best regards,"
 
 ]
-export const DirectorData = [
+export const directorData = [
     "Prof. S. L. Nalbalwar",
     "Director-DBATU Forum of Innovation, Incubation & Enterprise (DFIIE)"
 
 ]
 
-export const FocusArea = [
-    "Augmented Reality, Big Data and Analytics, Image Processing and Recognition.",
+export const focusArea = [
+    " ","Augmented Reality, Big Data and Analytics, Image Processing  and Recognition",
 	"Bio Technology",
+    
 	"Building Materials/Construction Technology",
 	"Electricity, New and Renewable Energy and Environmental sustainability", 
 	"Energy conservation, Energy efficient Motors and Equipments",

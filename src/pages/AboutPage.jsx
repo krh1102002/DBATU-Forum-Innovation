@@ -19,7 +19,7 @@ const AboutPage = () => {
         {params.info === 'dfiie' && <AboutDFIIE />}
         {params.info === 'director' && <BoardOfDirector />}
         {params.info === 'objective' && <DFIIEObjective />}
-        {params.info === 'director' && <DirectorMessage />}
+        {params.info === 'director1' && <DirectorMessage />}
         {params.info === 'focusareas' && <FocusArea />}
         {params.info === 'startups' && <IncubatedStartUps />}
         {params.info === 'team' && <Team />}
