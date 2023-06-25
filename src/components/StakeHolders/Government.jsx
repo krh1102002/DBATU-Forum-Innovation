@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { government } from '../../Data/StakeHolders'
+import banner from '../images/governmentbanner.png'
 
 const Government = () => {
+  const [loading,setLoading] = useState(true);
+  const handleLoad = () =>{
+    console.log("Entered")
+    setLoading(false)
+  }
 
   return (
     <div className='w-full h-full flex flex-col justify-center items-center py-4'>
@@ -13,7 +19,7 @@ const Government = () => {
               <p className='text-base  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src="https://t-hub.co/img/webp/governmentbanner.webp" alt="government" />
+          <img src={banner} onLoad={handleLoad} alt="government" className={`${loading?'non':'block'}`}/>
         </div>
       </div>
     </div>

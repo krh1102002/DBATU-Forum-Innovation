@@ -3,15 +3,27 @@ import { AiFillPhone } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
 import { IoLocation } from 'react-icons/io5'
 import MainLayout from '../layout/Main.layout'
+import SkeletonImage from '../components/SkeletonImage'
+
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading,setLoading] = useState(true);
   return (
     <div className=''>
       <div>
-        <img className='w-full ' src="https://tse2.mm.bing.net/th?id=OIP.KPreCfpGiB1UUs7JdVJnrQHaCX&pid=Api&P=0&h=180" alt="" />
+        <img 
+          className={`w-full h-96 ${loading?'hidden':'block'}`} 
+          src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" 
+          alt=""
+          onLoad={() => setLoading(false)}
+          onError={() => setLoading(true)}
+          />
+        
+        {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
+
       </div>
       <div className='py-4 flex flex-col justify-center items-center w-full'>
         <div className='text-center'>

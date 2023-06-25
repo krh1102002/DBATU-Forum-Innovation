@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import MainLayout from '../layout/Main.layout'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import {BiPlay} from 'react-icons/bi'
+import SkeletonImage from '../components/SkeletonImage';
 
 
 const Gallery = () => {
+  const [loading,setLoading] = useState(true);
   const images = [
     "https://react-photo-view.vercel.app/_next/static/media/4.57ff8e86.jpg",
     "https://react-photo-view.vercel.app/_next/static/media/2.b43f1ead.jpg",
@@ -15,18 +17,6 @@ const Gallery = () => {
       url:"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
       poster:"https://tse1.mm.bing.net/th?id=OIP.RDS7QQZph3XgSVwmqfrUcgAAAA"
     },
-    {
-      url:"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-      poster:"https://tse1.mm.bing.net/th?id=OIP.RDS7QQZph3XgSVwmqfrUcgAAAA"
-    },
-    {
-      url:"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-      poster:"https://tse1.mm.bing.net/th?id=OIP.RDS7QQZph3XgSVwmqfrUcgAAAA"
-    },
-    {
-      url:"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-      poster:"https://tse1.mm.bing.net/th?id=OIP.RDS7QQZph3XgSVwmqfrUcgAAAA"
-    }
   ]
   const [activeVideo,setActiveVideo] = useState(-1);
   const handlePlay = (idx,ele) =>{
@@ -44,9 +34,12 @@ const Gallery = () => {
         <PhotoProvider>
           <div className="flex justify-start  items-center flex-wrap gap-4 py-4">
             {images.map((item, index) => (
-              <PhotoView key={index} src={item}>
-                <img src={item} alt="" className='md:w-44 w-40 md:h-40 h-36 rounded overflow-hidden  object-cover' />
-              </PhotoView>
+              <>
+                {loading && <SkeletonImage height={'9rem'} width={'10rem'} />} 
+                <PhotoView key={index} src={item}>
+                  <img src={item} alt="" onLoad={() => setLoading(false)}  className={`md:w-44 w-40 md:h-40 h-36 rounded overflow-hidden  object-cover ${loading?'hidden':'block'}`} />
+                </PhotoView>
+              </>
             ))}
           </div>
         </PhotoProvider>

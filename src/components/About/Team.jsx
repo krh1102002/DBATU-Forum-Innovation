@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SkeletonImage from '../SkeletonImage'
 
 const Team = () => {
   const teamMembers = [
@@ -18,6 +19,7 @@ const Team = () => {
       "designation": "Graphic Designer"
     }
   ]
+  const [loading,setLoading] = useState(true)
   return (
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Our Team Members</h1>
@@ -25,7 +27,8 @@ const Team = () => {
         {teamMembers.map((member) =>(
           <div className='flex flex-col items-center  gap-1.5'>
             <div className='h-44 w-44'>
-              <img src={member.image} alt={member.name} className='rounded-full h-full w-full object-cover' />
+            {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
+              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded h-full w-full object-cover ${loading?'hidden':'block'}`} />
             </div>
             <h3 className='text-xl font-semibold'>{member.name}</h3>
             <div className='text-sm text-gray-400'>{member.designation}</div>
