@@ -1,12 +1,21 @@
 import React from 'react'
 import { technicalSupport } from '../../Data/Support'
 import banner from '../images/TechSupport.jpg'
+import { useState } from 'react'
+import SkeletonImage from '../SkeletonImage'
 
 const TechnicalSupport = () => {
+  const [loading,setLoading] = useState(true);
   return (
     <div>
       <div className='w-full h-96'>
-        <img src={banner} className='w-full h-full object-cover' alt="" />
+        {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
+        <img 
+          src={banner}
+          className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
+          onLoad={() => setLoading(false)}
+          alt="TechnicalSupport" 
+        />
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
       <h2 className='py-4 text-2xl font-semibold text-center'>Technical Support</h2>

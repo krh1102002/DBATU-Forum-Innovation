@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Homelayout from '../layout/Home.layout'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
+import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
   const [countUp,setCountUp] = useState(false);
@@ -46,6 +47,9 @@ const HomePage = () => {
   console.log(countUp)
   return (
     <>
+      <Helmet>
+        <title>Home | DFIIE</title>
+      </Helmet>
       <ScrollTrigger onEnter={()=> setCountUp(true)} >
       <div className='flex px-4 py-4 gap-4 flex-wrap items-center justify-center'>
         {data.map((item) =>(

@@ -4,6 +4,7 @@ import { MdEmail } from 'react-icons/md'
 import { IoLocation } from 'react-icons/io5'
 import MainLayout from '../layout/Main.layout'
 import SkeletonImage from '../components/SkeletonImage'
+import { Helmet } from 'react-helmet'
 
 
 const Contact = () => {
@@ -13,6 +14,9 @@ const Contact = () => {
   const [loading,setLoading] = useState(true);
   return (
     <div className=''>
+      <Helmet>
+        <title>Contact | DFIIE</title>
+      </Helmet>
       <div>
         <img 
           className={`w-full h-96 ${loading?'hidden':'block'}`} 

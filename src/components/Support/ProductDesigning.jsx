@@ -8,13 +8,13 @@ const ProductDesigning = () => {
   return (
     <div>
       <div className='w-full h-96'>
+        {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
         <img 
           src={banner} 
           alt=""
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)} 
         />
-          {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
       <h2 className='py-4 text-2xl font-semibold text-center'>Product Designing</h2>

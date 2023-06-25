@@ -3,6 +3,7 @@ import MainLayout from '../layout/Main.layout'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import {BiPlay} from 'react-icons/bi'
 import SkeletonImage from '../components/SkeletonImage';
+import { Helmet } from 'react-helmet';
 
 
 const Gallery = () => {
@@ -29,6 +30,9 @@ const Gallery = () => {
   }
   return (
     <div>
+      <Helmet>
+        <title>Gallery | DFIIE</title>
+      </Helmet>
       <div className='md:px-8 px-4 py-2'>
         <h1 className='text-2xl font-semibold py-2 '>Photos</h1>
         <PhotoProvider>

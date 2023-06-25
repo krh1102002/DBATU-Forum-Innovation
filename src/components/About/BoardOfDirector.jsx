@@ -1,6 +1,5 @@
 import React from 'react'
-import { aboutDFIIE } from '../../Data/About'
-import dbatuforum from '../images/background.png'
+import { Helmet } from 'react-helmet'
 
 const BoardOfDirector = () => {
   const boardMembers = [
@@ -21,6 +20,10 @@ const BoardOfDirector = () => {
     }
   ]
   return (
+    <>
+      <Helmet>
+        <title>Board Of Director | DFIIE</title>
+      </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Our Team Members</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
@@ -35,6 +38,7 @@ const BoardOfDirector = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

@@ -1,8 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const DirectorMessage = () => {
   return (
-    <div>DirectorMessage</div>
+    <>
+      <Helmet>
+        <title>Director Message | DFIIE</title>
+      </Helmet>
+      <div>DirectorMessage</div>
+    </>
   )
 }
 
