@@ -1,23 +1,18 @@
-export const AboutDFIFE = [
+export const aboutDFIIE = [
     "DBATU Forum of Innovation, Incubation & Enterprise (DFIIE) Lonere is created for fostering innovation by supporting & promoting technology-based startups and providing an ecosystem for their growth by Incubating in the Center. The Center was established in November 2019 as section 8 company in Dr. Babasaheb Ambedkar Technological University (DBATU)Lonere. The Incubation Center is actively involved in developing the paradigm of entrepreneurial mindset & environment of ideating, creating and commercializing the ventures at the institute or any other startups aligned to the core theme of center. The Center is supported by Maharashtra State Innovation Society (MSInS), Government of Maharashtra",
     "Through our incubation center, we aim to provide startups with access to affordable office space, mentorship, training, funding opportunities, and networking opportunities with other entrepreneurs and industry experts. We believe that by providing these resources and support, we can help startups accelerate their growth and create new jobs and opportunities in the state.",
-    "We are committed to working closely with startups and the broader entrepreneurship community to ensure that our incubation center is responsive to their needs and that we are delivering value to the economy. We will also be regularly monitoring and evaluating our incubation center to ensure that we are meeting our objectives and making a meaningful contribution to the state's economy.",
-    "Together, we believe that our incubation center can play an important role in promoting entrepreneurship, innovation, and economic growth in the state. We invite all startups and early-stage companies to join us on this journey"
+    
 ]
 
 export const DfiieObjective = [
-    "To promote innovation and assist start-up companies by establishing and providing physical infrastructure.",
-	"To provide incubation services to innovation and start-up companies by facilitating technology and management consulting services and guidance.",
-	"To promote entrepreneurial activities and create culture of entrepreneurship and innovation leading to start-up companies.",
-	"To build awareness about the importance of entrepreneurship among the students and local community.",
-	"To build a vibrant startup ecosystem, by establishing a network between academia, financial institutions, industries, and other institutes.",
-	"To promote new technology/ knowledge/ innovation-based startups.",
-	"To promote design thinking process among the incubates and provide the platform for speedy commercialization of technology.",
-    "To enhance the domain knowledge / skills to develop the innovative products / services.",
-	"To provide access to resources, Incubators can provide new businesses with access to capital, office space, equipment, and other resources that they may not otherwise be able to afford.",
-	"To foster innovation, Incubators can encourage innovation by providing entrepreneurs with mentorship and other forms of support that can help them develop their ideas.",
-	"To build entrepreneurial capacity, Incubators can help build the skills and knowledge of entrepreneurs, enabling them to grow their businesses and contribute to the broader economy.",
-	"To encourage collaboration and networking, Incubators can provide a platform for entrepreneurs to connect with each other, share knowledge, and form partnerships that can help them grow their businesses."
+    "▪️To promote innovation and assist start-up companies by establishing and providing physical infrastructure.",
+	"▪️To provide incubation services to innovation and start-up companies by facilitating technology and management consulting services and guidance.",
+	"▪️To promote entrepreneurial activities and create culture of entrepreneurship and innovation leading to start-up companies.",
+	"▪️To build awareness about the importance of entrepreneurship among the students and local community.",
+	"▪️To build a vibrant startup ecosystem, by establishing a network between academia, financial institutions, industries, and other institutes.",
+	"▪️To promote new technology/ knowledge/ innovation-based startups.",
+	"▪️To promote design thinking process among the incubates and provide the platform for speedy commercialization of technology.",
+    
 ]
 
 export const vision = [
