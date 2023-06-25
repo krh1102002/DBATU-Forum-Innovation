@@ -32,6 +32,11 @@ export const elements = [
                 name:"VC Message",
                 path:"/about/vcMessage"
             },
+            
+            {
+                name:"Director Message",
+                path:"/about/directormessage"
+            },
             {
                 name:"Team",
                 path:"/about/team"
