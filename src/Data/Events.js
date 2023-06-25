@@ -1,4 +1,4 @@
-export const WorkShopAndSeminars = [
+export const workShopAndSeminars = [
     "Workshops and seminars are an important part of the services that DFIIE offer to startups. These events can provide startups with valuable insights, knowledge, and skills that can help them build and grow their businesses. Some of the workshops and seminars that DFIIE offer include:",
 	"Developing a solid Business Plan. These workshops can cover topics such as market research, financial planning, and developing a marketing strategy.",
 	"Product Development, these workshops can cover topics such as prototyping, testing, and bringing a product to market.",
@@ -15,7 +15,7 @@ export const Ideathon_Hackathon_Stretethon = [
 	"A Stratethon is a strategic planning event where participants work together to develop new business strategies, identify growth opportunities, and solve complex problems related to business operations, marketing, and product development.",
     "All of these events require collaboration, creativity, and problem-solving skills, and they can be used to tackle a wide range of challenges, from social and environmental issues to business problems and technological innovation."
 ]
-export const Webinar = [
+export const webinar = [
     "Webinars are a valuable tool for Incubation Centres to engage with align community, share knowledge and expertise, and promote centre services. The topics of webinars at a DFIIE can vary depending on the interests and needs of the audience, but here are some suggestions:",
 	"Introduction to Entrepreneurship: This webinar can provide an overview of entrepreneurship, the startup ecosystem, and how to start a business.",
 	"Lean Startup Methodology: A webinar on Lean Startup can provide insights into how to develop a product or service with minimum resources and how to validate business ideas.",
@@ -28,7 +28,7 @@ export const Webinar = [
 	"Digital Marketing and E-commerce: This webinar can provide insights on how to develop and execute a digital marketing strategy, including social media, email marketing, and e-commerce.",
 	"Fundraising Strategies: A webinar on fundraising strategies can provide guidance on how to raise capital through different sources, including crowd funding, grants, and venture capital.",
 ]
-export const Conferences = [
+export const conferences = [
     "Conferences are a great way to bring together startup ommunity, share knowledge and expertise, and promote incubation centre services. Here are some possible conference themes that DFIIE can undertake:",
 	"Startup Pitch Day: An event where entrepreneurs can pitch their business ideas to a panel of investors and experts.",
 	"Industry-specific Conference: A conference focused on a specific industry, such as technology, healthcare, or renewable energy, featuring expert speakers and panel discussions.",
@@ -44,6 +44,6 @@ export const Conferences = [
 export const InvestorMeet_Fest = [
     "An Investor Meet or Investor Fest is an event where entrepreneurs can pitch their business ideas to potential investors. These events provide an opportunity for entrepreneurs to showcase their products or services and connect with investors who may be interested in providing funding or support. DFIIE organizes Investor Meet or Investor Fest at an Incubation Centre in order to connect startup founders with potential investors and create opportunities for funding."
 ]
-export const StartupMeet = [
+export const startupMeet = [
     "A Startup Meet is an event that brings together entrepreneurs, investors, industry experts, and other stakeholders in the startup ecosystem to discuss emerging trends, exchange ideas, and network with each other. These events can provide a platform for startups to showcase their products or services, seek feedback, and connect with potential investors or partners. DFIIE organizes startup meet after every six months."
 ]
