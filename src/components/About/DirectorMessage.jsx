@@ -1,9 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { directorMessage } from '../../Data/About'
 import dbatuforum from '../images/background.png'
 
 const DirectorMessage = () => {
   return (
+    <>
+    <Helmet>
+      <title>Director Message | DFIIE</title>
+    </Helmet>
     <div className='w-full h-full flex flex-col justify-center items-center py-4'>
       <div className='flex flex-col justify-center items-center py-6 md:px-12 px-6 bg-blue-100 rounded-xl lg:w-3/4 w-11/12'>
         <div className='flex md:flex-row flex-col-reverse background-banner items-center gap-6'>
@@ -17,6 +22,8 @@ const DirectorMessage = () => {
         </div>
       </div>
     </div>
+    </>
+
   )
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
 
 const IncubatedStartUps = () => {
@@ -106,6 +107,10 @@ const IncubatedStartUps = () => {
   ]
   const [loading,setLoading] = useState(true)
   return (
+    <>
+      <Helmet>
+        <title>Incubated StartUps | DFIIE</title>
+      </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Incubated Startups</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
@@ -121,6 +126,7 @@ const IncubatedStartUps = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

@@ -1,13 +1,20 @@
+
 import React, { useState } from 'react'
 import { conferences } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
 import imgs from '../images/conferences.jpg'
+import { Helmet } from 'react-helmet'
+
 
 const Conferences = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
   return (
+
     <div>
+    <Helmet>
+        <title>Conferences | Events | DFIIE</title>
+      </Helmet>
       <div className='w-full h-94'>
         <img 
           src={imgs}
@@ -33,6 +40,7 @@ const Conferences = () => {
         })}
       </ul>
     </div>
+
   )
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { focusArea } from '../../Data/About'
 import SkeletonImage from '../SkeletonImage'
 
@@ -6,6 +7,10 @@ const FocusArea = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
   return (
+    <>
+      <Helmet>
+        <title>Focus Areas | DFIIE</title>
+      </Helmet>
     <div>
       <div className='w-full h-96'>
         <img 
@@ -32,6 +37,7 @@ const FocusArea = () => {
         })}
       </ul>
     </div>
+</>
   )
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SkeletonImage from '../SkeletonImage'
+import { Helmet } from 'react-helmet'
 
 const Team = () => {
   const teamMembers = [
@@ -21,6 +22,10 @@ const Team = () => {
   ]
   const [loading,setLoading] = useState(true)
   return (
+    <>
+      <Helmet>
+        <title>Team | DFIIE</title>
+      </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Our Team Members</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
@@ -36,6 +41,7 @@ const Team = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

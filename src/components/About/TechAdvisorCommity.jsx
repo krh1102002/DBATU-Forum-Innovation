@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
 
 const TechAdvisorCommity = () => {
@@ -56,6 +57,10 @@ const TechAdvisorCommity = () => {
   ]
   const [loading,setLoading] = useState(true)
   return (
+    <>
+      <Helmet>
+        <title>Technical Advisory Commity | DFIIE</title>
+      </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Technical Advisery Committee</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
@@ -71,6 +76,7 @@ const TechAdvisorCommity = () => {
         ))}
       </div>
     </div>
+</>
   )
 }
 

@@ -1,10 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { vision, mission } from '../../Data/About'
 import dbatuforum from '../images/vision.png'
 import dbatuforum1 from '../images/mission.jpg'
 
 const VisionAndMission = () => {
   return (
+    <>
+      <Helmet>
+        <title>Vision & Mission | DFIIE</title>
+      </Helmet>
     <div className='w-full h-full flex flex-col justify-center items-center py-4'>
       <div className='flex flex-col justify-center items-center py-6 md:px-12 px-6 bg-blue-100 rounded-xl lg:w-3/4 w-11/12'>
         <div className='flex md:flex-row flex-col-reverse background-banner items-center gap-6'>
@@ -27,6 +32,7 @@ const VisionAndMission = () => {
         </div>
       </div>
     </div>
+</>
   )
 }
 
