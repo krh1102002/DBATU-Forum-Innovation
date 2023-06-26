@@ -6,11 +6,13 @@ import Footer from '../components/Footer'
 
 const Homelayout = (Components) => ({...props}) => {
   return (
-    <div>
+    <div className='flex flex-col h-full'>
         <Header />
         <Navbar />
-        <ImageSlider />
-        <Components {...props} />
+        <main>
+          <ImageSlider /> 
+          <Components {...props} />
+        </main>
         <Footer />
     </div>
   )

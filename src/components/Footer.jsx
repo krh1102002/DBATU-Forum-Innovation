@@ -6,7 +6,7 @@ import { BiCopyright } from 'react-icons/bi'
 
 const Footer = () => {
     return (
-        <div className='flex flex-col flex-1 gap-6 py-8 md:px-12 px-4 bg-[#27303e] text-white'>
+        <footer className='flex flex-col flex-1 gap-6 py-8 md:px-12 px-4 bg-[#27303e] text-white'>
             <div className='flex justify-between items-center'>
                 <div className='flex flex-col gap-1 text-white'>
                     <h1 className='lg:text-2xl md:text-xl text-lg font-semibold  font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIIE)</h1>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <BiCopyright /> DFIIE 2023
                 </span>
             </div>
-        </div>
+        </footer>
     )
 }
 

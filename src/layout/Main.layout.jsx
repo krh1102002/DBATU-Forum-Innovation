@@ -5,10 +5,12 @@ import Footer from '../components/Footer'
 
 const MainLayout = (Components) => ({...props}) => {
   return (
-    <div className='h-screen flex flex-col overflow-x-hidden'>
+    <div className='flex flex-col h-full overflow-x-hidden'>
         <Header />
         <Navbar />
-        <Components {...props} />
+        <main>
+          <Components {...props} />
+        </main>
         <Footer />
     </div>
   )

@@ -77,7 +77,7 @@ const Navbar = () => {
     },[pathname])
 
     return(
-        <div className='lg:flex sticky z-10 top-0 bg-white hidden items-center justify-center gap-2.5 py-2'>
+        <nav className='lg:flex sticky z-10 top-0 bg-white hidden items-center justify-center gap-2.5 py-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
                 <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white border-hover hover:text-blue-800 ${active === element.name.toLowerCase()?'text-blue-800':''}`}>
@@ -93,7 +93,7 @@ const Navbar = () => {
                 </div>}
             </div>
         ))}
-    </div>
+    </nav>
   )
 }
 

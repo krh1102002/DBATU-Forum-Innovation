@@ -48,7 +48,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Home | DFIIE</title>
+        <title>DBATU Forum Of Innovation & Incubation Enterprise(DFIIE</title>
       </Helmet>
       <ScrollTrigger onEnter={()=> setCountUp(true)} >
       <div className='flex px-4 py-4 gap-4 flex-wrap items-center justify-center'>

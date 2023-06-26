@@ -6,7 +6,7 @@ import { NavbarSm } from './Navbar';
 const Header = () => {
     const [navbarVisible,setNavbarVisible] = useState(false);
   return (
-    <>
+    <header>
         <div className={`lg:hidden absolute bg-white z-20 h-screen w-screen transition-all ease-in-out duration-200 overflow-x-hidden ${navbarVisible?'translate-x-0':'-translate-x-full'}`}>
             <NavbarSm onClose={() => setNavbarVisible(false)} setNavbarVisible={setNavbarVisible}/>
         </div>
@@ -26,7 +26,7 @@ const Header = () => {
                 </button>
             </div>
         </div>
-    </>
+    </header>
   )
 }
 

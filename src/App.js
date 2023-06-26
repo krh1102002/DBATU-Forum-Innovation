@@ -12,7 +12,7 @@ import Support from './pages/Support';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-full">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
