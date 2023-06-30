@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import { conferences } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-import imgs from '../images/conferences.jpg'
 import { Helmet } from 'react-helmet'
 
 
@@ -17,7 +16,7 @@ const Conferences = () => {
       </Helmet>
       <div className='w-full h-94'>
         <img 
-          src={imgs}
+          src="https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29uZmVyZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
           alt="Ideathon / Hackathon / Stereothon"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

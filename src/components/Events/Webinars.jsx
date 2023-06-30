@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { webinar } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-import imgs from '../images/webinar.jpg'
 
 const Webinars = () => {
   const [loading,setLoading] = useState(true)
@@ -10,7 +9,7 @@ const Webinars = () => {
     <div>
       <div className='w-full h-full'>
         <img 
-          src={imgs}
+          src="https://plus.unsplash.com/premium_photo-1682126295457-1cd11bc46cd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViaW5hcnN8ZW58MHx8MHx8fDA%3D"
           alt="Ideathon / Hackathon / Stereothon"
           className={`w-full h-96 object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

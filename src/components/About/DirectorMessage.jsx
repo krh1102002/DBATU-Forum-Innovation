@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { directorMessage } from '../../Data/About'
-import dbatuforum from '../images/background.png'
+import { directorData, directorMessage } from '../../Data/About'
+import DirectorImage from '../images/DirectorImage.jpg'
 
 const DirectorMessage = () => {
   return (
@@ -17,8 +17,11 @@ const DirectorMessage = () => {
             {directorMessage.map((data) =>(
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
+            {directorData.map((data,idx) =>(
+              <p className={`text-normal ${idx === 0?'font-semibold mt-4':''}  text-justify text-[#19191d]`}>{data}</p>
+            ))}
           </div>
-          <img src={dbatuforum} alt="About DFIIE" />
+          <img src={DirectorImage} alt="Director DBATU" />
         </div>
       </div>
     </div>

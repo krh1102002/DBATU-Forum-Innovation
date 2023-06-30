@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 import { hRSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import imgs from '../images/hackathon.jpg'
+import { Helmet } from 'react-helmet'
 
 const HRSupport = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
   return (
     <div>
+      <Helmet>
+        <title>HR Support | DFIIE</title>
+      </Helmet>
       <div className='w-full h-94'>
         <img 
           src={imgs}

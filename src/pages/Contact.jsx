@@ -32,7 +32,7 @@ const Contact = () => {
       <div className='py-4 flex flex-col justify-center items-center w-full'>
         <div className='text-center'>
           <h1 className='text-4xl font-bold text-center inline-block py-2 tracking-widest border-b-4 border-blue-800'>CONTACT US</h1>
-          <p className={`text-gray-600 text-lg py-4`}>Feel free to Contact us by submitting below form and we will get back to you as soon as possible</p>
+          <p className={`text-gray-600 text-lg py-4 px-2`}>Feel free to Contact us by submitting below form and we will get back to you as soon as possible</p>
         </div>
         <div className='w-full flex justify-center py-6'>
           <form className={` lg:w-3/5 md:w-4/5 w-11/12 rounded px-4 py-6 border shadow-lg flex flex-col gap-4`} >

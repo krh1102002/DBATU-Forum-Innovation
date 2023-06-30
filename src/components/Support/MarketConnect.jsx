@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { mentoringSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
+import { Helmet } from 'react-helmet'
 // import imgs from '../images/hackathon.jpg'
 
 const MarketConnect = () => {
@@ -8,6 +9,9 @@ const MarketConnect = () => {
   console.log(loading)
   return (
     <div>
+      <Helmet>
+        <title>Market Connect | DFIIE</title>
+      </Helmet>
       <div className='w-full h-94'>
         <img 
           src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFya2V0JTIwY29ubmVjdHxlbnwwfHwwfHx8MA%3D%3D"

@@ -3,11 +3,15 @@ import { technicalSupport } from '../../Data/Support'
 import banner from '../images/TechSupport.jpg'
 import { useState } from 'react'
 import SkeletonImage from '../SkeletonImage'
+import { Helmet } from 'react-helmet'
 
 const TechnicalSupport = () => {
   const [loading,setLoading] = useState(true);
   return (
     <div>
+      <Helmet>
+        <title>Technical Support | DFIIE</title>
+      </Helmet>
       <div className='w-full h-96'>
         {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
         <img 

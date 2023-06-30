@@ -16,7 +16,7 @@ const VisionAndMission = () => {
           <div className='flex flex-col gap-2'>
             <h1 className='text-2xl  font-semibold pb-3 text-[#19191d]'>Vision</h1>
             {vision.map((data) =>(
-              <p className='text-normal gap-3  text-justify text-[#19191d]' style={{fontSize:"20px"}}>{data}</p>
+              <p className='text-sm gap-3  text-justify text-[#19191d]' style={{fontSize:"20px"}}>{data}</p>
               ))}
           </div>
           <img src={dbatuforum} width={"281px"} alt="About DFIIE" />
@@ -25,7 +25,7 @@ const VisionAndMission = () => {
           <div className='flex flex-col gap-2'>
             <h1 className='text-2xl  font-semibold pb-3 text-[#19191d]'>Mission</h1>
             {mission.map((data) =>(
-              <p className='text-normal  text-justify text-[#19191d]' style={{fontSize:"19px"}}>{data}</p>
+              <p className='text-sm  text-justify text-[#19191d]' style={{fontSize:"19px"}}>{data}</p>
               ))}
           </div>
           <img className='pt-4' src={dbatuforum1} width={"281px"} alt="About DFIIE" />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { networkingSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
+import { Helmet } from 'react-helmet'
 // import imgs from '../images/hackathon.jpg'
 
 const NetworkingSupport = () => {
@@ -8,6 +9,9 @@ const NetworkingSupport = () => {
   console.log(loading)
   return (
     <div>
+      <Helmet>
+        <title>Networking Support | DFIIE</title>
+      </Helmet>
       <div className='w-full h-94'>
         <img 
           src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV0d29ya2luZ3xlbnwwfHwwfHx8MA%3D%3D"

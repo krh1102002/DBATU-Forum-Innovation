@@ -2,11 +2,15 @@ import React, { useState } from 'react'
 import { productDesigning } from '../../Data/Support'
 import banner from '../images/ProductDesign.jpg'
 import SkeletonImage from '../SkeletonImage'
+import { Helmet } from 'react-helmet'
 
 const ProductDesigning = () => {
   const [loading,setLoading] = useState(true)
   return (
     <div>
+      <Helmet>
+        <title>Product Designing | DFIIE</title>
+      </Helmet>
       <div className='w-full h-96'>
         {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
         <img 
