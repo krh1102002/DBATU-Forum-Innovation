@@ -10,7 +10,7 @@ export const academia = [
 export const ecosystemEnablers = [
     "Ecosystem enablers are stakeholders in the startup ecosystem that provide support and resources to help other stakeholders succeed. These stakeholders can include organizations, networks, and individuals that provide various services and support to startups and other ecosystem stakeholders. Ecosystem enablers play a crucial role in the startup ecosystem by providing support, resources, and services that help other stakeholders succeed, and by working to promote ecosystem growth and development"
 ]
-export const researchDevelopmentAndInstitution = [
+export const ResearchDevelopmentAndInstitution = [
     "Research and Development (R&D) institutions can be important stakeholders in the startup ecosystem. These institutions can include research centers, and other organizations focused on scientific and technological innovation. R&D institutions can play a crucial role in the startup ecosystem by providing funding, resources, expertise, and support for startups, and by driving innovation and technological advancement in their industries."
 ]
 export const mentors = [

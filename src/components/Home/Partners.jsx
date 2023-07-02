@@ -1,43 +1,39 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "../style.css";
+import '../style.css'
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 export default function Partner() {
+  const posterImages = [
+    "https://www.icreate.org.in/wp-content/uploads/2022/04/Banner.jpg",
+    "https://www.icreate.org.in/wp-content/uploads/2022/06/Home-Page-Banner-06-10.jpg",
+    "https://www.icreate.org.in/wp-content/uploads/2022/05/Home-Page-Banner-07.jpg",
+  ]
   return (
     <>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        direction={"vertical"}
+        pagination={{
+          clickable: true,
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination,Autoplay]}
         className="mySwiper"
+        
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {posterImages.map((image) =>(
+          <SwiperSlide key={image}>
+              <img src={image}  alt="banner" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
