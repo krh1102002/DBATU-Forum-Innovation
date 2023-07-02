@@ -1,58 +1,54 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
-
+import kale from "../images/kvkale.jpg"
+import malkani from "../images/TarunMalkani.jpg"
+import jogi from '../images/Jogi.jpg'
+import singh from '../images/ManpreetSingh.jpg'
+import nalbalwar from '../images/Nalbalwar.jpg'
+import john from '../images/MithunJohn.jpg'
+import kamble from "../images/kamble.jpg"
 const Team = () => {
   const boardMembers = [
     {
-      "name": "John Doe",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "name": "Prof. Dr. Karbhari V. Kale",
+      "image":kale,
+      "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
     },
     {
-      "name": "Jane Smith",
+      "name": "Shri. Tarun Malkani",
+      "image": malkani,
+      "designation": "Director- DFIIE"
+    },
+    {
+      "name": "Dr. B. F. Jogi",
+      "image":jogi,
+      "designation": "Invitee Member DFIIE Board"
+    },
+    {
+      "name": "Dr. S. L. Nalbalwar",
+      "image": nalbalwar,
+      "designation": "Director- DFIIE"
+    },
+    {
+      "name": "Shri. Manpreet Singh",
+      "image": singh,
+      "designation": "President ICIB & Director- DFIIE"
+    },
+    {
+      "name": "Shri. Mithun John",
+      "image": john,
+      "designation": "Observer- Invitee Member DFIIE Board"
+    },
+    {
+      "name": "Dr. Vivek Vadke",
       "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {
-      "name": "Michael Johnson",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa",
-      "designation": "Graphic Designer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Dr. Milind Kamble",
+      "image": kamble,
+      "designation": "Chairman- DICCI & Director- DFIIE"
     }
   ]
   const [loading,setLoading] = useState(true)

@@ -5,9 +5,9 @@ import SkeletonImage from '../SkeletonImage'
 const TechAdvisorCommity = () => {
   const adviseryteam = [
     {
-      "name": "John Doe",
+      "name": "Dr. Sanjay L. Nalbalwar",
       "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "designation": "Member, Executive Committee- DFIIE"
     },
     {
       "name": "Jane Smith",

@@ -64,3 +64,9 @@
     max-height: 145px;
   }
 }
+.readmorebtn:hover{
+  
+  color: #212cc9;
+  background-color: #fff;
+  border-color: #212cc9;
+}

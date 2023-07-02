@@ -4,6 +4,7 @@ import { elements } from '../Data/NavbarData'
 import { Link } from 'react-router-dom'
 import { BiCopyright } from 'react-icons/bi'
 
+
 const Footer = () => {
     return (
         <footer className='flex flex-col flex-1 gap-6 py-8 md:px-12 px-4 bg-[#27303e] text-white'>
@@ -30,9 +31,10 @@ const Footer = () => {
                 ))}
             </div>
             <div className='text-gray-400 text-center'>
-                <span className='flex items-center select-none gap-2 justify-center'>
+                <span className='flex inline-block items-center select-none gap-2 justify-center'>
                     <BiCopyright /> DFIIE 2023
                 </span>
+                
             </div>
         </footer>
     )
