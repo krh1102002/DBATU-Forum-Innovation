@@ -5,19 +5,19 @@ import { Helmet } from 'react-helmet'
 const Team = () => {
   const teamMembers = [
     {
-      "name": "John Doe",
+      "name": "Dr. Sanjay L. Nalbalwar",
       "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "designation": "Member, Executive Committee- DFIIE"
     },
     {
-      "name": "Jane Smith",
+      "name": "Dr. Sachin M. Pore",
       "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "designation": "Member, Executive Committee- DFIIE"
     },
     {
-      "name": "Michael Johnson",
+      "name": "Dr. Arvind W. Kiwalekar",
       "image": "https://tse1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa",
-      "designation": "Graphic Designer"
+      "designation": "Member, Executive Committee- DFIIE"
     }
   ]
   const [loading,setLoading] = useState(true)
