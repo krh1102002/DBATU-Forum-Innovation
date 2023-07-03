@@ -3,8 +3,7 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import Footer from '../components/Footer'
-import Vcmessageforhome from '../components/Home/vc message'
-import Partner from '../components/Home/Partners'
+
 
 const Homelayout = (Components) => ({...props}) => {
   return (
@@ -14,10 +13,7 @@ const Homelayout = (Components) => ({...props}) => {
         <main>
           <ImageSlider /> 
           <Components {...props} />
-          
-        </main>
-        <Vcmessageforhome/>
-        <Partner/>
+          </main>        
         <Footer />
     </div>
   )
