@@ -32,7 +32,7 @@ export const vCMessage = [
 ]
 export const vCData = [
     "Prof. (Dr.) K. V. Kale,",
-    "Vice-Chancellor of Dr. Babasaheb Ambedkar Technological University&",
+    "Hon'ble Vice-Chancellor of Dr. Babasaheb Ambedkar Technological University&",
     "Chairman - DBATU Forum of Innovation, Incubation & Enterprise (DFIIE)"
 
 ]
