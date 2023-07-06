@@ -1,23 +1,27 @@
 import React, { useState } from 'react'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
+import nabalwar from "../images/Nalbalwar.png"
+import Kiwalekar from "../images/Kiwalekar.jpg"
+import pore from "../images/pore.jpg"
+
 
 const Team = () => {
   const teamMembers = [
     {
-      "name": "John Doe",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "name": "Dr. Sanjay L. Nalbalwar",
+      "image": nabalwar,
+      "designation": "Member, Executive Committee- DFIIE"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Dr. Sachin M. Pore",
+      "image": pore,
+      "designation": "Member, Executive Committee- DFIIE"
     },
     {
-      "name": "Michael Johnson",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa",
-      "designation": "Graphic Designer"
+      "name": "Dr. Arvind W. Kiwalekar",
+      "image": Kiwalekar,
+      "designation": "Member, Executive Committee- DFIIE"
     }
   ]
   const [loading,setLoading] = useState(true)
@@ -33,7 +37,7 @@ const Team = () => {
           <div className='flex flex-col items-center  gap-1.5'>
             <div className='h-44 w-44'>
             {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
-              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded h-full w-full object-cover ${loading?'hidden':'block'}`} />
+              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded-full h-full w-full object-cover object-top ${loading?'hidden':'block'}`} />
             </div>
             <h3 className='text-xl font-semibold'>{member.name}</h3>
             <div className='text-sm text-gray-400'>{member.designation}</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { researchDevelopmentAndInstitution } from '../../Data/StakeHolders'
+import { ResearchDevelopmentAndInstitution } from '../../Data/StakeHolders'
 
 const RAndInstitution = () => {
   return (
@@ -13,7 +13,7 @@ const RAndInstitution = () => {
           <div className='flex md:flex-row flex-col-reverse background-banner items-center  gap-6'>
             <div className='flex flex-col gap-2'>
               <h1 className='text-2xl  font-semibold pb-6 text-[#19191d]'>Research Development & Institution</h1>
-              {researchDevelopmentAndInstitution.map((data) =>(
+              {ResearchDevelopmentAndInstitution.map((data) =>(
                 <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
                 ))}
             </div>

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import Footer from '../components/Footer'
 
+
 const Homelayout = (Components) => ({...props}) => {
   return (
     <div className='flex flex-col h-full'>
@@ -12,7 +13,7 @@ const Homelayout = (Components) => ({...props}) => {
         <main>
           <ImageSlider /> 
           <Components {...props} />
-        </main>
+          </main>        
         <Footer />
     </div>
   )

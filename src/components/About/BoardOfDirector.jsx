@@ -1,58 +1,54 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
-
+import kale from "../images/kvkale.jpg"
+import malkani from "../images/TarunMalkani.jpg"
+import jogi from '../images/Jogi.jpg'
+import singh from '../images/ManpreetSingh.jpg'
+import nalbalwar from '../images/Nalbalwar.jpg'
+import john from '../images/MithunJohn.jpg'
+import kamble from "../images/kamble.jpg"
 const Team = () => {
   const boardMembers = [
     {
-      "name": "John Doe",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "name": "Prof. Dr. Karbhari V. Kale",
+      "image":kale,
+      "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Shri. Tarun Malkani",
+      "image": malkani,
+      "designation": "Director- DFIIE"
     },
     {
-      "name": "Michael Johnson",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa",
-      "designation": "Graphic Designer"
+      "name": "Dr. B. F. Jogi",
+      "image":jogi,
+      "designation": "Invitee Member DFIIE Board"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Dr. S. L. Nalbalwar",
+      "image": nalbalwar,
+      "designation": "Director- DFIIE"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Shri. Manpreet Singh",
+      "image": singh,
+      "designation": "President ICIB & Director- DFIIE"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Shri. Mithun John",
+      "image": john,
+      "designation": "Observer- Invitee Member DFIIE Board"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Dr. Vivek Vadke",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
-    },
-    {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "Dr. Milind Kamble",
+      "image": kamble,
+      "designation": "Chairman- DICCI & Director- DFIIE"
     }
   ]
   const [loading,setLoading] = useState(true)
@@ -68,7 +64,7 @@ const Team = () => {
           <div className='flex flex-col items-center  gap-1.5'>
             <div className='h-44 w-44'>
             {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
-              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded h-full w-full object-cover ${loading?'hidden':'block'}`} />
+              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded-full h-full w-full object-cover object-top ${loading?'hidden':'block'}`} />
             </div>
             <h3 className='text-xl font-semibold'>{member.name}</h3>
             <div className='text-sm text-gray-400'>{member.designation}</div>

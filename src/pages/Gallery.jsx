@@ -4,14 +4,17 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import {BiPlay} from 'react-icons/bi'
 import SkeletonImage from '../components/SkeletonImage';
 import { Helmet } from 'react-helmet';
+import banner1 from '../components/images/homeBanner1.jpg'
+import banner2 from '../components/images/homeBanner2.jpg'
+import banner3 from '../components/images/homeBanner3.jpg'
+import banner4 from '../components/images/homeBanner4.jpg'
+import banner5 from '../components/images/homeBanner5.jpg'
 
 
 const Gallery = () => {
   const [loading,setLoading] = useState(true);
   const images = [
-    "https://react-photo-view.vercel.app/_next/static/media/4.57ff8e86.jpg",
-    "https://react-photo-view.vercel.app/_next/static/media/2.b43f1ead.jpg",
-    "https://react-photo-view.vercel.app/_next/static/media/3.70695fb9.jpg"
+    banner1,banner2,banner3,banner4,banner5
   ]
   const videos = [
     {

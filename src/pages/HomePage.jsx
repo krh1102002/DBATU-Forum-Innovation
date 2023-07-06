@@ -3,7 +3,8 @@ import Homelayout from '../layout/Home.layout'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 import { Helmet } from 'react-helmet'
-
+import Vcmessageforhome from '../components/Home/vc message'
+import Partner from '../components/Home/Partners'
 const HomePage = () => {
   const [countUp,setCountUp] = useState(false);
   const data = [
@@ -46,7 +47,7 @@ const HomePage = () => {
   ]
   console.log(countUp)
   return (
-    <>
+    <div>
       <Helmet>
         <title>DBATU Forum Of Innovation & Incubation Enterprise(DFIIE</title>
       </Helmet>
@@ -64,7 +65,10 @@ const HomePage = () => {
         ))}
       </div>
       </ScrollTrigger>
-    </>
+      <Vcmessageforhome/>
+      <Partner/>
+        
+    </div>
   )
 }
 
