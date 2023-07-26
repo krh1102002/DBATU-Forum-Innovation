@@ -47,7 +47,7 @@ const TechAdvisorCommity = () => {
         <title>Technical Advisory Commity | DFIIE</title>
       </Helmet>
     <div className='md:px-8 px-4 py-4'>
-      <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Executive Committee </h1>
+      <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Technical Advisery Committee</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
         {adviseryteam.map((member) =>(
           <div className='flex flex-col items-center  gap-1.5'>
