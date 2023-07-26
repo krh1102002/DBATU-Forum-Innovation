@@ -24,7 +24,7 @@ const IncubatedStartUps = () => {
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Incubated Startups</h1>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
-        {incubatedstartups.map((member) =>(
+        {/* {incubatedstartups.map((member) =>(
           <div className='flex flex-col items-center  gap-1.5'>
             <div className='h-44 w-44'>
             {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
@@ -33,7 +33,8 @@ const IncubatedStartUps = () => {
             <h3 className='text-xl font-semibold'>{member.name}</h3>
             <div className='text-sm text-gray-400'>{member.designation}</div>
           </div>
-        ))}
+        ))} */}
+        <p className='text-center font-semibold text-gray-500'>Work Under Process...</p>
       </div>
     </div>
     </>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './images/logo.png'
+import logo from './images/logo (2).png'
 import { elements } from '../Data/NavbarData'
 import { Link } from 'react-router-dom'
 import { BiCopyright } from 'react-icons/bi'
@@ -13,7 +13,7 @@ const Footer = () => {
                     <h1 className='lg:text-2xl md:text-xl text-lg font-semibold  font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIIE)</h1>
                     <h6 className='lg:text-lg md:text-base text-sm font-semibold'>Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere, Maharashtra - 402301</h6>
                 </div>
-                <img src={logo} alt="" />
+                <img src={logo} alt='Logo' className='md:w-20 md:h-32 sm:h-28 w-12 h-16'/>
             </div>
             <div className='flex md:justify-around justify-start gap-6 flex-wrap select-none'>
                 {elements.map((ele) => (

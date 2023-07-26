@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {BiChevronDown, BiChevronUp} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
-import logo from './images/dbatuForum.jpg'
+import logo from './images/logo (2).png'
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 import { elements } from '../Data/NavbarData'
@@ -18,10 +18,10 @@ export const NavbarSm = ({onClose,setNavbarVisible}) =>{
     }
     return(
         <>
-        <div className='flex items-center justify-between px-2 py-1.5 '>
+        <div className='flex items-center justify-between px-2 py-1.5 bg-[#005580]'>
             <div className='flex items-center gap-2'>
                 <div>
-                    <img src={logo} alt='Logo' className='md:h-full w-auto h-[45px]'/>
+                    <img src={logo} alt='Logo' className='md:w-20 md:h-32 sm:h-28 w-12 h-16'/>
                 </div>
                 <div className='sm:flex flex-col hidden'>
                     <h1 className='lg:text-2xl md:text-xl text-lg font-semibold text-blue-800 font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIFE)</h1>
@@ -77,10 +77,10 @@ const Navbar = () => {
     },[pathname])
 
     return(
-        <nav className='lg:flex sticky z-10 top-0 bg-white hidden items-center justify-center gap-2.5 py-2'>
+        <nav className='lg:flex sticky z-10 top-0 bg-[#005580] hidden items-center justify-center gap-2.5 py-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
-                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white border-hover hover:text-blue-800 ${active === element.name.toLowerCase()?'text-blue-800':''}`}>
+                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 text-white border-b-2 border-[#005580] border-hover hover:text-[#b1c3ff] ${active === element.name.toLowerCase()?'text-[#b1c3ff]':''}`}>
                     <Link to={element?.path}>{element.name}</Link>
                     {element?.items && <span><BiChevronDown size={24}/></span>}
                 </div>

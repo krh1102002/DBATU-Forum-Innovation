@@ -10,11 +10,11 @@ const HomePage = () => {
   const data = [
     {
       name:"Incubated StartUps",
-      total:44
+      total:20
     },
     {
       name:"Employment Generation",
-      total:100
+      total:20
     },
     {
       name:"Mentor Network",
