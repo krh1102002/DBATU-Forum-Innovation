@@ -29,12 +29,7 @@ const HomePage = () => {
       name:"Events Conducted",
       total:50
     },
-    
-    {
-      name:"Ip Generation",
-      total:30
-    },
-    {
+     {
       name:"International Connects",
       total:2
     }
@@ -43,7 +38,7 @@ const HomePage = () => {
   return (
     <div>
       <Helmet>
-        <title>DBATU Forum Of Innovation & Incubation Enterprise(DFIIE</title>
+        <title>DBATU Forum Of Innovation & Incubation Enterprise(DFIIE)</title>
       </Helmet>
       <ScrollTrigger onEnter={()=> setCountUp(true)} >
       <div className='flex px-4 py-4 gap-4 flex-wrap items-center justify-center'>
