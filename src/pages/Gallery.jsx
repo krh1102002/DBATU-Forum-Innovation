@@ -51,19 +51,7 @@ const Gallery = () => {
           </div>
         </PhotoProvider>
       </div>
-      <div className='md:px-8 px-4 py-2'>
-        <h1 className='text-2xl font-semibold py-2'>Videos</h1>
-        <div className='flex gap-4 w-full flex-wrap lg:justify-start justify-center items-center'>
-          {videos.map((video,idx) =>(
-              <div className='w-72 relative'>
-                <video controls={activeVideo === idx} id={`video${idx}`}  src={video.url} poster={video.poster}></video>
-                {activeVideo !== idx && <button onClick={(e) =>handlePlay(idx,e)} className='absolute videos top-2 left-2 px-4 text-white bg-[#242a32] hover:bg-opacity-80 py-1 border rounded-xl'>
-                  <BiPlay size={28}/>
-                </button>}
-            </div>
-          ))}
-        </div>
-      </div>
+      
     </div>
   )
 }

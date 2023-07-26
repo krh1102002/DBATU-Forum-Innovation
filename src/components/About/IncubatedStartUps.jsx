@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
-import SkeletonImage from '../SkeletonImage'
+import dbatuforum from '../images/workinprogress.png'
 
 const IncubatedStartUps = () => {
   const incubatedstartups = [
     {
-      "name": "John Doe",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.IrUBHhdMo6wWLFueKNreRwHaHa",
-      "designation": "Project Manager"
+      "name": "J",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": ""
     },
     {
-      "name": "Jane Smith",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.QjynegEfQVPq5kIEuX9fWQHaFj",
-      "designation": "Senior Developer"
+      "name": "",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": ""
     },
   ]
   const [loading,setLoading] = useState(true)
@@ -21,22 +21,18 @@ const IncubatedStartUps = () => {
       <Helmet>
         <title>Incubated StartUps | DFIIE</title>
       </Helmet>
-    <div className='md:px-8 px-4 py-4'>
-      <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Incubated Startups</h1>
-      <div className='flex gap-6 flex-wrap justify-center items-center'>
-        {/* {incubatedstartups.map((member) =>(
-          <div className='flex flex-col items-center  gap-1.5'>
-            <div className='h-44 w-44'>
-            {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
-              <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded h-full w-full object-cover ${loading?'hidden':'block'}`} />
+    
+      <div className='w-full h-full flex flex-col justify-center items-center py-4'>
+        <div className='flex flex-col justify-center items-center py-6 md:px-12 px-6 rounded-xl lg:w-3/4 w-11/12'>
+          <div className='flex md:flex-row flex-col-reverse  items-center gap-6'>
+            <div className='flex flex-col gap-2'>
+              {/* <h1 className='text-2xl  font-semibold pb-6 text-[#19191d]'>About DFIIE</h1> */}
+              
             </div>
-            <h3 className='text-xl font-semibold'>{member.name}</h3>
-            <div className='text-sm text-gray-400'>{member.designation}</div>
+            <img src={dbatuforum} alt="work in progress" />
           </div>
-        ))} */}
-        <p className='text-center font-semibold text-gray-500'>Work Under Process...</p>
+        </div>
       </div>
-    </div>
     </>
   )
 }
