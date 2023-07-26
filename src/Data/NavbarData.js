@@ -25,7 +25,7 @@ export const elements = [
             },
             
             {
-                name:"Technical Advisery Committee",
+                name:"Executive Committee",
                 path:"/about/committee"
             },
             {

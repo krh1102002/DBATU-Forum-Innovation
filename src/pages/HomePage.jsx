@@ -28,10 +28,6 @@ const HomePage = () => {
     {
       name:"Events Conducted",
       total:50
-    },
-     {
-      name:"International Connects",
-      total:2
     }
   ]
   console.log(countUp)

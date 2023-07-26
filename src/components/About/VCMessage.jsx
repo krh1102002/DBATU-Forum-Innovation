@@ -7,7 +7,7 @@ const VCMessage = () => {
   return (
     <>
       <Helmet>
-        <title>VC Message | DFIIE</title>
+        <title>Hon'ble VC Message | DFIIE</title>
       </Helmet>
       <div className='w-full h-full flex flex-col justify-center items-center py-4'>
       <div className='flex flex-col justify-center items-center py-6 md:px-12 px-6 bg-blue-100 rounded-xl lg:w-3/4 w-11/12'>
