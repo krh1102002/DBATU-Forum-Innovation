@@ -17,29 +17,14 @@ const Team = () => {
       "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
     },
     {
+      "name": "Dr. Milind Kamble",
+      "image": kamble,
+      "designation": "Chairman- DICCI & Director- DFIIE"
+    },
+    {
       "name": "Shri. Tarun Malkani",
       "image": malkani,
       "designation": "Director- DFIIE"
-    },
-    {
-      "name": "Dr. B. F. Jogi",
-      "image":jogi,
-      "designation": "Invitee Member DFIIE Board"
-    },
-    {
-      "name": "Dr. S. L. Nalbalwar",
-      "image": nalbalwar,
-      "designation": "Director- DFIIE"
-    },
-    {
-      "name": "Shri. Manpreet Singh",
-      "image": singh,
-      "designation": "President ICIB & Director- DFIIE"
-    },
-    {
-      "name": "Shri. Mithun John",
-      "image": john,
-      "designation": "Observer- Invitee Member DFIIE Board"
     },
     {
       "name": "Dr. Vivek Vadke",
@@ -47,10 +32,28 @@ const Team = () => {
       "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {
-      "name": "Dr. Milind Kamble",
-      "image": kamble,
-      "designation": "Chairman- DICCI & Director- DFIIE"
+      "name": "Dr. S. L. Nalbalwar",
+      "image": nalbalwar,
+      "designation": "Director- DFIIE"
+    },
+    {
+      "name": "Dr. B. F. Jogi",
+      "image":jogi,
+      "designation": "Invitee Member DFIIE Board"
+    },
+    
+    {
+      "name": "Shri. Manpreet Singh",
+      "image": singh,
+      "designation": "President ICIB & Director- DFIIE"
+    },
+    {
+      "name": "Shri. Vivek Mongal",
+      "image": john,
+      "designation": "Observer- Invitee Member DFIIE Board"
     }
+   
+    
   ]
   const [loading,setLoading] = useState(true)
   return (
