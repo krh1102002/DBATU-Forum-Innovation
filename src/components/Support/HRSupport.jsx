@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { hRSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
-import imgs from '../images/hackathon.jpg'
+import imgs from '../images/hr.png'
 import { Helmet } from 'react-helmet'
 
 const HRSupport = () => {

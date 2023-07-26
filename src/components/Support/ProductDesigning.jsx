@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { productDesigning } from '../../Data/Support'
-import banner from '../images/ProductDesign.jpg'
+import banner from '../images/product designing.png'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
 

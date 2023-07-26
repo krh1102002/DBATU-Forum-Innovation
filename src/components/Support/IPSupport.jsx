@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { intellectualPropertyRight } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-
+import ip from "../images/ipsupport.png"
 const IPSupport = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
@@ -13,7 +13,7 @@ const IPSupport = () => {
       </Helmet>
       <div className='w-full h-94'>
         <img 
-          src="https://www.eymate.com.au/wp-content/uploads/2018/06/AdobeStock_170263847.jpeg"
+          src={ip}
           alt="Intellectual Property (IP) Support"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

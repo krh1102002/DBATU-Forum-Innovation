@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { legalSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-
+import legal from '../images/legalsupport.png'
 const LegalSupport = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
@@ -13,7 +13,7 @@ const LegalSupport = () => {
       </Helmet>
       <div className='w-full h-96'>
         <img 
-          src="https://plus.unsplash.com/premium_photo-1661542759930-9cf315dae451?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src={legal}
           alt="LegalSupport"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}
