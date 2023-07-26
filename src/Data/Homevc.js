@@ -1,0 +1,3 @@
+export const Vcmessageforhomee=["Dear All,","I am delighted to welcome you all to our DBATU Forum of Innovation, Incubation & Enterprise (DFIIE) - Incubation Centre. As the Chairman of the Centre, I am honored to lead a team of dedicated professionals who are passionate about supporting and fostering innovation and entrepreneurship."]
+export const directormessageforhomee=["Dear Entrepreneurs and Innovators,",
+"It is my pleasure to welcome you to our DBATU Forum of Innovation, Incubation & Enterprise (DFIIE). As the Director of DFIIE, I am excited to lead a team of professionals who are dedicated to fostering innovation and entrepreneurship."]

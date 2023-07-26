@@ -1,49 +1,27 @@
-import React, { useState } from 'react'
-import {BiChevronDown} from 'react-icons/bi'
+import React, { useEffect, useState } from 'react'
+import {BiChevronDown, BiChevronUp} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
-import logo from './dbatuForum.jpg'
+import logo from './images/logo (2).png'
+import { Link, useLocation } from 'react-router-dom'
+import './style.css'
+import { elements } from '../Data/NavbarData'
 
-const NavbarLg = ({elements}) =>{
-    const [visible,setVisible] = useState(-1)
+export const NavbarSm = ({onClose,setNavbarVisible}) =>{
 
-    return(
-        <div className='lg:flex hidden items-center justify-center gap-2.5 py-2'>
-        {elements.map((element, idx) =>(
-            <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
-                <div className='flex gap-1 items-center text-lg z-20 font-medium transition-all ease-linear duration-300 border-b-2 border-white hover:border-blue-800 hover:text-blue-800'>
-                    <span>{element.name}</span>
-                    {element?.elements && <span><BiChevronDown size={24}/></span>}
-                </div>
-                {element.elements && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[30px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
-                    {element?.elements?.map((ele) =>(
-                        <div className=' w-full p-1.5 hover:bg-gray-300 hover:bg-opacity-30 font-medium'>
-                            <span>{ele}</span>
-                        </div>
-                    ))}
-                </div>}
-            </div>
-        ))}
-    </div>
-    )
-}
-export const NavbarSm = ({onClose}) =>{
-    const elements = [
-        {name:"Home"},
-        {name:"About", elements:["About DFIIE", "Vision & Mission"]},
-        {name:"Stakeholder", elements:["Government","Investors"]},
-        {name:"Support", elements:["Legal Support","Technical Support"]},
-        {name:"Events", elements:["WorkShop & Seminars"]},
-        {name:"News & Announcement"},
-        {name:"Contact"},
-        {name:"Gallery"}
-    ]
     const [visible,setVisible] = useState(-1)
+    const handleVisible = (idx) =>{
+        if(idx === visible){
+            setVisible(-1)
+        }else{
+            setVisible(idx)
+        }
+    }
     return(
         <>
-        <div className='flex items-center justify-between px-2'>
+        <div className='flex items-center justify-between px-2 py-1.5 bg-[#005580]'>
             <div className='flex items-center gap-2'>
                 <div>
-                    <img src={logo} alt='Logo' className='md:h-full w-auto h-[45px]'/>
+                    <img src={logo} alt='Logo' className='md:w-20 md:h-32 sm:h-28 w-12 h-16'/>
                 </div>
                 <div className='sm:flex flex-col hidden'>
                     <h1 className='lg:text-2xl md:text-xl text-lg font-semibold text-blue-800 font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIFE)</h1>
@@ -58,16 +36,16 @@ export const NavbarSm = ({onClose}) =>{
         </div>
         <div className='flex flex-col gap-2.5 py-2 px-2'>
         {elements.map((element, idx) =>(
-            <div className='relative cursor-pointer px-2' onClick={() => setVisible(idx)}>
-                <div className='flex gap-1 items-center justify-between text-lg font-medium'>
-                    <span>{element.name}</span>
-                    {element?.elements && <span><BiChevronDown size={24}/></span>}
+            <div className='relative cursor-pointer px-2' key={element.name}>
+                <div className='flex gap-1 z-20 items-center justify-between text-lg font-medium' onClick={() => handleVisible(idx)}>
+                    <Link to={element?.path}>{element.name}</Link>
+                    {visible === idx ? <span ><BiChevronUp size={24}/></span>: element.items && <span ><BiChevronDown size={24}/></span>}
                 </div>
-                {element.elements && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-full transition-all duration-200 ease-linear'>
-                    {element?.elements?.map((ele) =>(
-                        <div className=' w-full p-1.5 font-medium'>
-                            <span>{ele}</span>
-                        </div>
+                {element.items && <div className={`flex flex-col items-start justify-center gap-2 w-full  height-transition ${visible === idx?'h-auto overflow-visible':' h-0 overflow-hidden'}`}>
+                    {element?.items?.map((ele,idx) =>(
+                        <Link to={ele.path} className=' w-full p-1.5 font-medium' key={idx} onClick={() => setNavbarVisible(false)}>
+                            <span>{ele.name}</span>
+                        </Link>
                     ))}
                 </div>}
             </div>
@@ -78,20 +56,44 @@ export const NavbarSm = ({onClose}) =>{
 }
 
 const Navbar = () => {
-    const elements = [
-        {name:"Home"},
-        {name:"About", elements:["About DFIIE", "Vision & Mission"]},
-        {name:"Stakeholder", elements:["Government","Investors"]},
-        {name:"Support", elements:["Legal Support","Technical Support"]},
-        {name:"Events", elements:["WorkShop & Seminars"]},
-        {name:"News & Announcement"},
-        {name:"Contact"},
-        {name:"Gallery"}
-    ]
-  return (
-    <div>
-        <NavbarLg elements={elements}/>
-    </div>
+
+    const [visible,setVisible] = useState(-1)
+    const {pathname} = useLocation()
+    const [active,setActive] = useState("");
+    useEffect(() =>{
+        let i = 1;
+        let currActive = "";
+        while(pathname.charAt(i) !== '/' && i<pathname.length){
+            currActive += pathname.charAt(i);
+            i++;
+        }
+        if(currActive.length === 0)
+            setActive("home")
+        else if(currActive === 'news&announcement'){
+            setActive('news & announcement')
+        }
+        else
+            setActive(currActive)
+    },[pathname])
+
+    return(
+        <nav className='lg:flex sticky z-10 top-0 bg-[#005580] hidden items-center justify-center gap-2.5 py-2'>
+        {elements.map((element, idx) =>(
+            <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
+                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 text-white border-b-2 border-[#005580] border-hover hover:text-[#b1c3ff] ${active === element.name.toLowerCase()?'text-[#b1c3ff]':''}`}>
+                    <Link to={element?.path}>{element.name}</Link>
+                    {element?.items && <span><BiChevronDown size={24}/></span>}
+                </div>
+                {element.items && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[32px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
+                    {element?.items?.map((ele) =>(
+                        <Link to={ele.path} className='w-full p-1.5 hover:bg-gray-400 hover:bg-opacity-30 font-medium'>
+                            <span>{ele.name}</span>
+                        </Link>
+                    ))}
+                </div>}
+            </div>
+        ))}
+    </nav>
   )
 }
 
