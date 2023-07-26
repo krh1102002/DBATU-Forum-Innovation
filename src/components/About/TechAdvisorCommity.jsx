@@ -44,7 +44,7 @@ const TechAdvisorCommity = () => {
   return (
     <>
       <Helmet>
-        <title>Technical Advisory Commity | DFIIE</title>
+        <title>Executive Committee | DFIIE</title>
       </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Technical Advisery Committee</h1>

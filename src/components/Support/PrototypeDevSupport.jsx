@@ -27,11 +27,11 @@ const PrototypeDevSupport = () => {
         {productDevelopmentSupport.map((data,idx) =>{
           if(idx === 0){
             return(
-              <p className='text-lg py-4'>{data}</p>
+              <p className='text-lg py-4 justify-normal'>{data}</p>
             )
           }else{
             return(
-              <li className='py-2'>{data}</li>
+              <li className='py-2 justify-normal'>{data}</li>
             )
           }
         })}

@@ -18,31 +18,25 @@ const HomePage = () => {
     },
     {
       name:"Mentor Network",
-      total:60
+      total:80
     },
     {
-      name:"Academic Partnership",
+      name:"Ecosystem Partnership",
       total:20
     },
-    {
-      name:"Corporate Partnership",
-      total:30
-    },
+    
     {
       name:"Events Conducted",
-      total:25
+      total:50
     },
-    {
-      name:"Fund Raised By StartUps",
-      total:100000
-    },
+    
     {
       name:"Ip Generation",
       total:30
     },
     {
       name:"International Connects",
-      total:20
+      total:2
     }
   ]
   console.log(countUp)

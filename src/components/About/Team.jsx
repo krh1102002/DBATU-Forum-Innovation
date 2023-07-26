@@ -9,19 +9,26 @@ import pore from "../images/pore.jpg"
 const Team = () => {
   const teamMembers = [
     {
-      "name": "Dr. Sanjay L. Nalbalwar",
-      "image": nabalwar,
-      "designation": "Member, Executive Committee- DFIIE"
+      "name": "Dr. Navin Khandare",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": "Chief Executive Officer"
     },
     {
-      "name": "Dr. Sachin M. Pore",
-      "image": pore,
-      "designation": "Member, Executive Committee- DFIIE"
+      "name": " ",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": "Incubation Manager"
     },
     {
-      "name": "Dr. Arvind W. Kiwalekar",
-      "image": Kiwalekar,
-      "designation": "Member, Executive Committee- DFIIE"
+      "name": " ",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": "Accounts & Admin Manager"
+
+    },
+    {
+      "name": " ",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "designation": "Executive Assistant"
+
     }
   ]
   const [loading,setLoading] = useState(true)

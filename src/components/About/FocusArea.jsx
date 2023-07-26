@@ -23,7 +23,7 @@ const FocusArea = () => {
 
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
-      <h2 className='py-4 text-2xl font-semibold text-center'>FocusArea</h2>
+      <h2 className='py-4 text-2xl font-semibold text-center'>Focus Area</h2>
         {focusArea.map((data,idx) =>{
           if(idx === 0){
             return(

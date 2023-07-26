@@ -6,7 +6,7 @@ const RAndInstitution = () => {
   return (
     <>
       <Helmet>
-        <title>Research Development And Institution| DFIIE</title>
+        <title>Research and Development Institution| DFIIE</title>
       </Helmet>
       <div className='w-full h-full flex flex-col justify-center items-center py-4'>
         <div className='flex flex-col justify-center items-center py-6 md:px-12 px-6 bg-blue-100 rounded-xl lg:w-3/4 w-11/12'>
