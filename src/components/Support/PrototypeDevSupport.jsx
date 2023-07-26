@@ -22,7 +22,7 @@ const PrototypeDevSupport = () => {
 
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
-      <h2 className='py-4 text-2xl font-semibold text-center'>Market Connect</h2>
+      <h2 className='py-4 text-2xl font-semibold text-center'>Prototype Development Support</h2>
         {productDevelopmentSupport.map((data,idx) =>{
           if(idx === 0){
             return(
