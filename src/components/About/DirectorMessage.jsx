@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { directorData, directorMessage } from '../../Data/About'
-import DirectorImage from '../images/DirectorImage.jpg'
+import DirectorImage from '../images/DirectorLarge.jpg'
 
 const DirectorMessage = () => {
   return (

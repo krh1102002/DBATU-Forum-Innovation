@@ -1,32 +1,32 @@
 import React, { useState } from 'react'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import nabalwar from "../images/Nalbalwar.png"
-import Kiwalekar from "../images/Kiwalekar.jpg"
-import pore from "../images/pore.jpg"
+import blank from "../images/blank.jpg"
+import Kiwalekar from "../images/navin.png"
+
 
 
 const Team = () => {
   const teamMembers = [
     {
       "name": "Dr. Navin Khandare",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "image": Kiwalekar,
       "designation": "Chief Executive Officer"
     },
     {
       "name": " ",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "image": blank,
       "designation": "Incubation Manager"
     },
     {
       "name": " ",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "image": blank,
       "designation": "Accounts & Admin Manager"
 
     },
     {
       "name": " ",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "image": blank,
       "designation": "Executive Assistant"
 
     }

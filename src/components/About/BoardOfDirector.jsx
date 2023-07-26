@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
-import kale from "../images/kvkale.jpg"
-import malkani from "../images/TarunMalkani.jpg"
-import jogi from '../images/Jogi.jpg'
-import singh from '../images/ManpreetSingh.jpg'
-import nalbalwar from '../images/Nalbalwar.jpg'
-import john from '../images/MithunJohn.jpg'
-import kamble from "../images/kamble.jpg"
+import kale from "../images/kale.png"
+import malkani from "../images/malkani.png"
+import jogi from '../images/Jogi.png'
+import singh from '../images/singh.png'
+import nalbalwar from '../images/Nalbalwar.png'
+import john from '../images/vivekmogal.jpg'
+import kamble from "../images/kamble.png"
+import blank from "../images/blank.jpg"
 const Team = () => {
   const boardMembers = [
     {
@@ -42,7 +43,7 @@ const Team = () => {
     },
     {
       "name": "Dr. Vivek Vadke",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
+      "image":blank,
       "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {

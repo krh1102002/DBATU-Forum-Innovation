@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { InvestorMeet_Fest } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-
+import investormeet1 from '../images/investor.jpg'
 const InvestorMeet = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
@@ -9,7 +9,7 @@ const InvestorMeet = () => {
     <div>
       <div className='w-full h-94'>
         <img 
-          src="https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEludmVzdG9yJTIwbWVldHxlbnwwfHwwfHx8MA%3D%3D"
+          src={investormeet1}
           alt="Ideathon / Hackathon / Stereothon"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

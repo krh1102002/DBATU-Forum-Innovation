@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Ideathon_Hackathon_Stretethon } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-
+import hackathon1 from '../images/hackathon.jpg'
 const Hackathon = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
@@ -9,7 +9,7 @@ const Hackathon = () => {
     <div>
       <div className='w-full h-94'>
         <img 
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SWRlYXRob24lMjAlMjYlMjBIYWNrYXRob258ZW58MHx8MHx8fDA%3D"
+          src={hackathon1}
           alt="Ideathon / Hackathon / Stereothon"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

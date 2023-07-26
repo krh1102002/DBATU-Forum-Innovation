@@ -22,7 +22,7 @@ const HomePage = () => {
     },
     {
       name:"Ecosystem Partnership",
-      total:20
+      total:13
     },
     
     {
