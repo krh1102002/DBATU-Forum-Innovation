@@ -10,17 +10,13 @@ import john from '../images/vivekmogal.jpg'
 import blank from "../images/blank.jpg"
 import kamble from '../images/kamble.png'
 const Team = () => {
+  
   const vc = {
     "name": "Prof. Dr. Karbhari V. Kale",
     "image":kale,
     "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
   }
   const boardMembers = [
-    {
-      "name": "Prof. Dr. Karbhari V. Kale",
-      "image":kale,
-      "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
-    },
     {
       "name": "Dr. Milind Kamble",
       "image": kamble,
@@ -56,9 +52,7 @@ const Team = () => {
       "name": "Shri. Vivek Mongal",
       "image": john,
       "designation": "Observer- Invitee Member DFIIE Board"
-    }
-   
-    
+    } 
   ]
   const [loading,setLoading] = useState(true)
   return (
