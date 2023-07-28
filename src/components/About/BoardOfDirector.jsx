@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import SkeletonImage from '../SkeletonImage'
-import kale from "../images/kvkale.jpg"
-import malkani from "../images/TarunMalkani.jpg"
-import jogi from '../images/Jogi.jpg'
-import singh from '../images/ManpreetSingh.jpg'
-import nalbalwar from '../images/Nalbalwar.jpg'
-import john from '../images/MithunJohn.jpg'
-import kamble from "../images/kamble.jpg"
+import kale from "../images/kale.png"
+import malkani from "../images/malkani.png"
+import jogi from '../images/Jogi.png'
+import singh from '../images/singh.png'
+import nalbalwar from '../images/Nalbalwar.png'
+import john from '../images/vivekmogal.jpg'
+import blank from "../images/blank.jpg"
+import kamble from '../images/kamble.png'
 const Team = () => {
   const vc = {
     "name": "Prof. Dr. Karbhari V. Kale",
@@ -16,14 +17,24 @@ const Team = () => {
   }
   const boardMembers = [
     {
+      "name": "Prof. Dr. Karbhari V. Kale",
+      "image":kale,
+      "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
+    },
+    {
+      "name": "Dr. Milind Kamble",
+      "image": kamble,
+      "designation": "Chairman- DICCI & Director- DFIIE"
+    },
+    {
       "name": "Shri. Tarun Malkani",
       "image": malkani,
       "designation": "Director- DFIIE"
     },
     {
-      "name": "Dr. B. F. Jogi",
-      "image":jogi,
-      "designation": "Invitee Member DFIIE Board"
+      "name": "Dr. Vivek Vadke",
+      "image":blank,
+      "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {
       "name": "Dr. S. L. Nalbalwar",
@@ -31,25 +42,23 @@ const Team = () => {
       "designation": "Director- DFIIE"
     },
     {
+      "name": "Dr. B. F. Jogi",
+      "image":jogi,
+      "designation": "Invitee Member DFIIE Board"
+    },
+    
+    {
       "name": "Shri. Manpreet Singh",
       "image": singh,
       "designation": "President ICIB & Director- DFIIE"
     },
     {
-      "name": "Shri. Mithun John",
+      "name": "Shri. Vivek Mongal",
       "image": john,
       "designation": "Observer- Invitee Member DFIIE Board"
-    },
-    {
-      "name": "Dr. Vivek Vadke",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
-      "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
-    },
-    {
-      "name": "Dr. Milind Kamble",
-      "image": kamble,
-      "designation": "Chairman- DICCI & Director- DFIIE"
     }
+   
+    
   ]
   const [loading,setLoading] = useState(true)
   return (

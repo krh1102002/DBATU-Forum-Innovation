@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { mentoringSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-// import imgs from '../images/hackathon.jpg'
+import imgs from '../images/markect connect.png'
 
 const MarketConnect = () => {
   const [loading,setLoading] = useState(true)
@@ -14,7 +14,7 @@ const MarketConnect = () => {
       </Helmet>
       <div className='w-full h-94'>
         <img 
-          src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFya2V0JTIwY29ubmVjdHxlbnwwfHwwfHx8MA%3D%3D"
+          src={imgs}
           alt="Market Connect"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}

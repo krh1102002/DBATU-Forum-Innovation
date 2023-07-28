@@ -11,11 +11,13 @@ const FocusArea = () => {
       <Helmet>
         <title>Focus Areas | DFIIE</title>
       </Helmet>
+
       <h1 className='text-3xl font-semibold text-center py-4'>Focus Areas</h1>
     <div className='flex items-center justify-center gap-6 flex-wrap py-4 md:px-12 px-4'>
       {images.map((image) =>(
         <Image src={image} alt="FocusArea" classData='w-48 shadow'/>
       ))}
+
     </div>
 </>
   )

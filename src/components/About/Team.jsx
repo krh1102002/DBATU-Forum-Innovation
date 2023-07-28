@@ -1,27 +1,34 @@
 import React, { useState } from 'react'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import nabalwar from "../images/Nalbalwar.png"
-import Kiwalekar from "../images/Kiwalekar.jpg"
-import pore from "../images/pore.jpg"
+import blank from "../images/blank.jpg"
+import Kiwalekar from "../images/navin.png"
+
 
 
 const Team = () => {
   const teamMembers = [
     {
-      "name": "Dr. Sanjay L. Nalbalwar",
-      "image": nabalwar,
-      "designation": "Member, Executive Committee- DFIIE"
-    },
-    {
-      "name": "Dr. Sachin M. Pore",
-      "image": pore,
-      "designation": "Member, Executive Committee- DFIIE"
-    },
-    {
-      "name": "Dr. Arvind W. Kiwalekar",
+      "name": "Dr. Navin Khandare",
       "image": Kiwalekar,
-      "designation": "Member, Executive Committee- DFIIE"
+      "designation": "Chief Executive Officer"
+    },
+    {
+      "name": " ",
+      "image": blank,
+      "designation": "Incubation Manager"
+    },
+    {
+      "name": " ",
+      "image": blank,
+      "designation": "Accounts & Admin Manager"
+
+    },
+    {
+      "name": " ",
+      "image": blank,
+      "designation": "Executive Assistant"
+
     }
   ]
   const [loading,setLoading] = useState(true)
