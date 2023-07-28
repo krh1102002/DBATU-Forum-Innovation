@@ -18,7 +18,7 @@ export const NavbarSm = ({onClose,setNavbarVisible}) =>{
     }
     return(
         <>
-        <div className='flex items-center justify-between px-2 py-1.5 bg-[#005580]'>
+        <div className='flex items-center justify-between px-2 py-1.5'>
             <div className='flex items-center gap-2'>
                 <div>
                     <img src={logo} alt='Logo' className='md:w-20 md:h-32 sm:h-28 w-12 h-16'/>
@@ -77,14 +77,14 @@ const Navbar = () => {
     },[pathname])
 
     return(
-        <nav className='lg:flex sticky z-10 top-0 bg-[#005580] hidden items-center justify-center gap-2.5 py-2'>
+        <nav className='lg:flex sticky z-20 top-0 bg-[#005580] hidden items-center justify-center gap-2.5 py-2'>
         {elements.map((element, idx) =>(
             <div className='relative cursor-pointer px-2' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)} key={element.name}>
-                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300 text-white border-b-2 border-[#005580] border-hover hover:text-[#b1c3ff] ${active === element.name.toLowerCase()?'text-[#b1c3ff]':''}`}>
+                <div className={`flex gap-1 items-center text-xl z-20 font-medium transition-all ease-linear duration-300  border-b-2 border-[#005580] border-hover hover:text-[#b0e7ff] ${active === element.name.toLowerCase()?'text-[#b0e7ff]':'text-white'}`}>
                     <Link to={element?.path}>{element.name}</Link>
                     {element?.items && <span><BiChevronDown size={24}/></span>}
                 </div>
-                {element.items && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[32px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
+                {element.items && visible === idx && <div className='flex flex-col items-start justify-center gap-2 w-48  shadow-lg absolute z-10 bg-white top-[34px]' onMouseOver={() => setVisible(idx)} onMouseOut={() => setVisible(-1)}>
                     {element?.items?.map((ele) =>(
                         <Link to={ele.path} className='w-full p-1.5 hover:bg-gray-400 hover:bg-opacity-30 font-medium'>
                             <span>{ele.name}</span>

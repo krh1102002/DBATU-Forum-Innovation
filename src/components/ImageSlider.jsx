@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import './style.css'
-import banner1 from './images/homeBanner1.jpg'
-import banner2 from './images/homeBanner2.jpg'
-import banner3 from './images/homeBanner3.jpg'
-import banner4 from './images/homeBanner4.jpg'
-import banner5 from './images/homeBanner5.jpg'
+import banner1 from './images/homeBanner1.png'
+import banner2 from './images/homeBanner2.png'
+import banner3 from './images/homeBanner3.png'
+import banner4 from './images/homeBanner4.png'
+import banner5 from './images/homeBanner5.png'
 
 
 // import required modules
@@ -33,8 +33,8 @@ export default function ImageSlider() {
         className="mySwiper"
         
       >
-        {posterImages.map((image) =>(
-          <SwiperSlide key={image}>
+        {posterImages.map((image,index) =>(
+          <SwiperSlide key={index}>
               <img src={image}  alt="banner" />
           </SwiperSlide>
         ))}

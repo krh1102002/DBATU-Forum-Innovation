@@ -9,12 +9,12 @@ import nalbalwar from '../images/Nalbalwar.jpg'
 import john from '../images/MithunJohn.jpg'
 import kamble from "../images/kamble.jpg"
 const Team = () => {
+  const vc = {
+    "name": "Prof. Dr. Karbhari V. Kale",
+    "image":kale,
+    "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
+  }
   const boardMembers = [
-    {
-      "name": "Prof. Dr. Karbhari V. Kale",
-      "image":kale,
-      "designation": "Hon’ble Vice Chancellor – Dr. BATU & Chairman- DFIIE"
-    },
     {
       "name": "Shri. Tarun Malkani",
       "image": malkani,
@@ -59,6 +59,16 @@ const Team = () => {
       </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Board of Director</h1>
+      <div className='py-4'>
+        <div className='flex flex-col items-center  gap-1.5'>
+            <div className='h-52 w-52'>
+            {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
+              <img src={vc.image} onLoad={()=> setLoading(false)} alt={vc.name} className={`rounded-full h-full w-full object-cover object-top ${loading?'hidden':'block'}`} />
+            </div>
+            <h3 className='text-xl font-semibold'>{vc.name}</h3>
+            <div className='text-sm text-gray-400'>{vc.designation}</div>
+          </div>
+      </div>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
         {boardMembers.map((member) =>(
           <div className='flex flex-col items-center  gap-1.5'>

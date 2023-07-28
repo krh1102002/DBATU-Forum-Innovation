@@ -29,7 +29,7 @@
   height: 2px;
   top: 100%;
   left: 0;
-  background: #749BC2;
+  background: #b0e7ff;
   transition: transform 0.3s linear;
   transform: scaleX(0);
   transform-origin: right;

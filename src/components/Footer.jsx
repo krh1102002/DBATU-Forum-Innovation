@@ -3,6 +3,7 @@ import logo from './images/logo (2).png'
 import { elements } from '../Data/NavbarData'
 import { Link } from 'react-router-dom'
 import { BiCopyright } from 'react-icons/bi'
+import {BsLinkedin,BsFacebook} from 'react-icons/bs'
 
 
 const Footer = () => {
@@ -29,9 +30,16 @@ const Footer = () => {
                         </div>
                     )
                 ))}
+                <div>
+                    <h2 className='font-semibold'>Social Media</h2>
+                    <div className='flex gap-2 py-4 items-center'>
+                        <a href="https://www.facebook.com/profile.php?id=100091560372128" rel="noreferrer" target='_blank'><BsFacebook size={30} /></a>
+                        <a href="https://www.linkedin.com/company/dbatu-forum-of-innovation-incubation-enterprise/" rel="noreferrer" target='_blank'><BsLinkedin size={30}/></a>
+                    </div>
+                </div>
             </div>
             <div className='text-gray-400 text-center'>
-                <span className='flex inline-block items-center select-none gap-2 justify-center'>
+                <span className='flex items-center select-none gap-2 justify-center'>
                     <BiCopyright /> DFIIE 2023
                 </span>
                 

@@ -1,41 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
-import { focusArea } from '../../Data/About'
-import SkeletonImage from '../SkeletonImage'
+import { focus1,focus2,focus3,focus4,focus5,focus6,focus7,focus8,focus9,focus10,focus11,focus12,focus13,focus14 } from './ImageImports'
+import Image from '../Image'
+
 
 const FocusArea = () => {
-  const [loading,setLoading] = useState(true)
-  console.log(loading)
+  const images = [focus1,focus2,focus3,focus4,focus5,focus6,focus7,focus8,focus9,focus10,focus11,focus12,focus13,focus14]
   return (
     <>
       <Helmet>
         <title>Focus Areas | DFIIE</title>
       </Helmet>
-    <div>
-      <div className='w-full h-96'>
-        <img 
-          src="https://americanhealth.jhu.edu/sites/default/files/website-media/hero-images/hero_focus-area_people-working.jpg" 
-          alt="LegalSupport"
-          className={`w-full h-full object-cover ${loading?'hidden':'block'}`}
-          onLoad={()=>setLoading(false)}
-        />
-        {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
-
-      </div>
-      <ul className='m-auto list-disc md:px-12 px-6 py-4'>
-      <h2 className='py-4 text-2xl font-semibold text-center'>FocusArea</h2>
-        {focusArea.map((data,idx) =>{
-          if(idx === 0){
-            return(
-              <p className='text-lg py-4'>{data}</p>
-            )
-          }else{
-            return(
-              <li className='py-2'>{data}</li>
-            )
-          }
-        })}
-      </ul>
+      <h1 className='text-3xl font-semibold text-center py-4'>Focus Areas</h1>
+    <div className='flex items-center justify-center gap-6 flex-wrap py-4 md:px-12 px-4'>
+      {images.map((image) =>(
+        <Image src={image} alt="FocusArea" classData='w-48 shadow'/>
+      ))}
     </div>
 </>
   )
