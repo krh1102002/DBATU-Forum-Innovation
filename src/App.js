@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
 import './App.css';
 import HomePage from './pages/HomePage';
@@ -11,9 +12,19 @@ import StakeHolders from './pages/StakeHolders';
 import Support from './pages/Support';
 
 function App() {
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    React.useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
   return (
     <div className="App h-full">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/contact' element={<Contact />} />

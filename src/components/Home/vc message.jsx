@@ -3,6 +3,7 @@ import { Vcmessageforhomee,directormessageforhomee } from "../../Data/Homevc";
 import Fade from 'react-reveal/Fade';
 import directorImg from '../images/DirectorLarge.jpg'
 import vcImage from '../images/VCImage.jpg'
+import { Link } from "react-router-dom";
 
 const Vcmessageforhome = () => {
   return (
@@ -31,7 +32,7 @@ const Vcmessageforhome = () => {
               - Dr. Karbari. V. Kale (Chairman, DFIIE)
               </p>
               <div className="flex justify-items-start mt-3">
-              <button className="rounded  border px-2 py-1.5 text-blue-800 border-blue-800 hover:bg-blue-800 hover:text-white font-semibold transition-colors ease-in-out duration-100">Read More</button>
+              <Link to={'/about/vcMessage'} className="rounded  border px-2 py-1.5 text-blue-800 border-blue-800 hover:bg-blue-800 hover:text-white font-semibold transition-colors ease-in-out duration-100">Read More</Link>
               </div>
             </div>
             </Fade>
@@ -64,7 +65,7 @@ const Vcmessageforhome = () => {
               - Prof. S. L. Nalbalwar (Director, DFIIE)
               </p>
               <div className="flex justify-items-end mt-3">
-              <button className="rounded  border px-2 py-1.5 text-blue-800 border-blue-800 hover:bg-blue-800 hover:text-white font-semibold transition-colors ease-in-out duration-100">Read More</button>
+              <Link to={'/about/directormessage'} className="rounded  border px-2 py-1.5 text-blue-800 border-blue-800 hover:bg-blue-800 hover:text-white font-semibold transition-colors ease-in-out duration-100">Read More</Link>
               </div>
             </div>  </Fade>
             <Fade right>
