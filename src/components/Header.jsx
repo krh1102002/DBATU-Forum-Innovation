@@ -13,7 +13,7 @@ const Header = () => {
         <div className='flex items-center lg:justify-center shadow justify-between gap-4 py-2 px-4'>
             <div className='flex items-center gap-8 md:gap-4'>
                 <div>
-                    <img src={logo} alt='Logo' className='md:w-20 md:h-32 sm:h-24 sm:w-auto w-auto h-16'/>
+                    <img src={logo} alt='Logo' className=' md:h-32 sm:h-24  w-auto h-16'/>
                 </div>
                 <div className='sm:flex flex-col hidden'>
                     <h1 className='lg:text-3xl md:text-xl text-lg font-semibold text-blue-800 font-serif'>DBATU Forum Of Innovation, Incubation & Enterprise (DFIIE)</h1>
