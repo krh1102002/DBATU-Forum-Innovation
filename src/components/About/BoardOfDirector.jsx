@@ -49,7 +49,7 @@ const Team = () => {
       "designation": "President ICIB & Director- DFIIE"
     },
     {
-      "name": "Shri. Vivek Mongal",
+      "name": "Shri. Vivek Mogal",
       "image": john,
       "designation": "Observer- Invitee Member DFIIE Board"
     } 
