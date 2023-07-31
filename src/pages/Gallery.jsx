@@ -5,7 +5,7 @@ import SkeletonImage from '../components/SkeletonImage';
 import { Helmet } from 'react-helmet';
 import banner1 from '../components/images/homeBanner1.png'
 import banner2 from '../components/images/homeBanner2.png'
-import banner3 from '../components/images/homeBanner3.png'
+import banner3 from '../components/images/homeBanner3.jpg'
 import banner4 from '../components/images/homeBanner4.png'
 import banner5 from '../components/images/homeBanner5.png'
 

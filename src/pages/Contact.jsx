@@ -5,7 +5,7 @@ import { IoLocation } from 'react-icons/io5'
 import MainLayout from '../layout/Main.layout'
 import SkeletonImage from '../components/SkeletonImage'
 import { Helmet } from 'react-helmet'
-
+import contact from '../components/images/contact us.png'
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -20,7 +20,7 @@ const Contact = () => {
       <div>
         <img 
           className={`w-full h-96 ${loading?'hidden':'block'}`} 
-          src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" 
+          src={contact}
           alt=""
           onLoad={() => setLoading(false)}
           onError={() => setLoading(true)}

@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import './style.css'
 import banner1 from './images/homeBanner1.png'
 import banner2 from './images/homeBanner2.png'
-import banner3 from './images/homeBanner3.png'
+import banner3 from './images/homeBanner3.jpg'
 import banner4 from './images/homeBanner4.png'
 import banner5 from './images/homeBanner5.png'
 
@@ -21,7 +21,7 @@ export default function ImageSlider() {
   return (
     <>
       <Swiper
-        direction={"vertical"}
+        direction={"horizontal"}
         pagination={{
           clickable: true,
         }}
