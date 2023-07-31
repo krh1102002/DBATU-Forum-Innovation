@@ -1,7 +1,7 @@
 import React from 'react'
 import { investors } from '../../Data/StakeHolders'
 import { Helmet } from 'react-helmet'
-
+import '../style.css'
 const Investors = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const Investors = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src="https://t-hub.co/img/webp/investor_banner_img.webp" alt="academia" />
+          <img src="https://t-hub.co/img/webp/investor_banner_img.webp" style={{width:'20%'}} className='img11' alt="academia" />
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { mentors } from '../../Data/StakeHolders'
 import { Helmet } from 'react-helmet'
-
+import '../style.css'
+import mentor from "../images/mentors_banner_img.jpg"
 const Mentors = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const Mentors = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src="https://t-hub.co/img/webp/mentors_banner_img.webp" alt="mentors" />
+          <img src={mentor} style={{width:'20%'}} className='img11' alt="mentors" />
         </div>
       </div>
     </div>

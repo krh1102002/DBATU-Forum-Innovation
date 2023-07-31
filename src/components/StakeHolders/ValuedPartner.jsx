@@ -1,7 +1,7 @@
 import React from 'react'
 import { valuedPartner } from '../../Data/StakeHolders'
 import { Helmet } from 'react-helmet'
-
+import '../style.css'
 const ValuedPartner = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const ValuedPartner = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src="https://t-hub.co/img/webp/service_provider_banner.webp" alt="academia" />
+          <img src="https://t-hub.co/img/webp/service_provider_banner.webp" style={{width:'20%'}} className='img11' alt="academia" />
         </div>
       </div>
     </div>

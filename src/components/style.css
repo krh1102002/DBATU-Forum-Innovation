@@ -186,6 +186,9 @@
     width: 52% !important;
     margin-top: 13px !important;
   }
+  .img11{
+    width: 100% !important;
+  }
 }
 @media (min-width: 998px) {
   .vcimg {

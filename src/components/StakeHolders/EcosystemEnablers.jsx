@@ -1,7 +1,7 @@
 import React from 'react'
 import { ecosystemEnablers } from '../../Data/StakeHolders'
 import { Helmet } from 'react-helmet'
-
+import '../style.css'
 const EcosystemEnablers = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const EcosystemEnablers = () => {
             <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
             ))}
         </div>
-        <img src="https://t-hub.co/img/webp/ecosystem_banner.webp" alt="ecosystem" />
+        <img src="https://t-hub.co/img/webp/ecosystem_banner.webp" style={{width:'20%'}} className='img11' alt="ecosystem" />
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { ResearchDevelopmentAndInstitution } from '../../Data/StakeHolders'
-
+import '../style.css'
 const RAndInstitution = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const RAndInstitution = () => {
                 <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
                 ))}
             </div>
-            <img src="https://images.unsplash.com/photo-1603573355706-3f15d98cf100?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5zdGl0dXRpb258ZW58MHx8MHx8fDA%3D" className='w-64 h-auto mt-3' alt="About DFIIE" />
+            <img src="https://images.unsplash.com/photo-1603573355706-3f15d98cf100?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5zdGl0dXRpb258ZW58MHx8MHx8fDA%3D" style={{width:'20%'}} className='w-64 h-auto mt-3 img11' alt="About DFIIE" />
           </div>
         </div>
       </div>
