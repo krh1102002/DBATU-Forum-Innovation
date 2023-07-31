@@ -9,6 +9,11 @@ import banner2 from './images/homeBanner2.png'
 import banner3 from './images/homeBanner3.jpg'
 import banner4 from './images/homeBanner4.png'
 import banner5 from './images/homeBanner5.png'
+import banner6 from './images/homeBanner6.png'
+import banner7 from './images/homeBanner7.png'
+import banner8 from './images/homeBanner8.png'
+import banner9 from './images/homeBanner9.png'
+import banner10 from './images/homeBanner10.png'
 
 
 // import required modules
@@ -16,7 +21,7 @@ import { Autoplay, Pagination } from "swiper";
 
 export default function ImageSlider() {
   const posterImages = [
-    banner1,banner2,banner3,banner4,banner5
+    banner1,banner2,banner3,banner4,banner5,banner6,banner7,banner8,banner9,banner10
   ]
   return (
     <>
