@@ -132,12 +132,12 @@
 
 @media (max-width: 420px) {
   .valued {
-    display: flex;
-    justify-content: center;
-    font-size: 23px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #192f59;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    color: #192f59 !important;
   }
   .swiper {
     max-height: 145px;
