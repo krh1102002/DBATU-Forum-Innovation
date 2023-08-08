@@ -7,7 +7,7 @@ import jogi from '../images/Jogi.png'
 import singh from '../images/singh.png'
 import nalbalwar from '../images/Nalbalwar.png'
 import john from '../images/vivekmogal.jpg'
-import blank from "../images/blank.jpg"
+import vadake from "../images/vadake.png"
 import kamble from '../images/kamble.png'
 const Team = () => {
   
@@ -29,7 +29,7 @@ const Team = () => {
     },
     {
       "name": "Dr. Vivek Vadke",
-      "image":blank,
+      "image":vadake,
       "designation": "ExTech Process Engineering Ltd. & Director- DFIIE"
     },
     {
