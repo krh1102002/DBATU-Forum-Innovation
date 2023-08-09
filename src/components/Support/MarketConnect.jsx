@@ -12,7 +12,7 @@ const MarketConnect = () => {
       <Helmet>
         <title>Market Connect | DFIIE</title>
       </Helmet>
-      <div className='w-full h-94'>
+      <div className='w-full h-100'>
         <img 
           src={imgs}
           alt="Market Connect"

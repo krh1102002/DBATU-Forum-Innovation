@@ -12,8 +12,8 @@ const TechnicalSupport = () => {
       <Helmet>
         <title>Technical Support | DFIIE</title>
       </Helmet>
-      <div className='w-full h-96'>
-        {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
+      <div className='w-full h-100'>
+        {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
         <img 
           src={banner}
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}

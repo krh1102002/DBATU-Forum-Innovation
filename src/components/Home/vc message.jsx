@@ -1,8 +1,8 @@
 import React from "react";
 import { Vcmessageforhomee, directormessageforhomee } from "../../Data/Homevc";
 import { Fade } from "react-awesome-reveal";
-import directorImg from '../images/DirectorLarge.jpg'
-import vcImage from '../images/VCImage.jpg'
+import directorImg from '../images/homenalbalwarsir.png'
+import vcImage from '../images/homekale.png'
 import { Link } from "react-router-dom";
 
 const Vcmessageforhome = () => {
@@ -14,7 +14,7 @@ const Vcmessageforhome = () => {
             <Fade direction='left' triggerOnce={true}>
               <img
                 src={vcImage}
-                className="lg:w-[350px] h-[300px] md:w-[600px]"
+                className="lg:w-[1200px]  h-full w-full object-cover rounded-full"
                 alt="vice chancler"
               />
             </Fade>
@@ -71,7 +71,7 @@ const Vcmessageforhome = () => {
             <Fade right triggerOnce={true}>
               <img
                 src={directorImg}
-                className="lg:w-[1000px] md:w-[1200px]  w-full md:block hidden"
+                className="h-full w-full object-cover rounded-full md:block hidden"
                 alt="vice chancler"
               />
             </Fade>

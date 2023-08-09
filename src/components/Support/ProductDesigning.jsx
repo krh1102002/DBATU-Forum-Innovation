@@ -11,7 +11,7 @@ const ProductDesigning = () => {
       <Helmet>
         <title>Product Designing | DFIIE</title>
       </Helmet>
-      <div className='w-full h-96'>
+      <div className='w-full h-100'>
         {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 
         <img 
           src={banner} 
