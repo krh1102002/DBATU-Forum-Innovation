@@ -48,9 +48,17 @@ const TechAdvisorCommity = () => {
       </Helmet>
     <div className='md:px-8 px-4 py-4'>
       <h1 className='md:text-3xl text-2xl font-semibold text-center py-6'>Executive Committee</h1>
+      <div className='flex flex-col items-center py-2  gap-1.5'>
+            <div className='h-44 w-44'>
+            {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
+              <img src={adviseryteam[0].image} onLoad={()=> setLoading(false)} alt={adviseryteam[0].name} className={`rounded-full h-full w-full object-cover object-top ${loading?'hidden':'block'}`} />
+            </div>
+            <h3 className='text-xl font-semibold'>{adviseryteam[0].name}</h3>
+            <div className='text-sm text-gray-400'>{adviseryteam[0].designation}</div>
+        </div>
       <div className='flex gap-6 flex-wrap justify-center items-center'>
-        {adviseryteam.map((member) =>(
-          <div className='flex flex-col items-center  gap-1.5'>
+        {adviseryteam.map((member,idx) =>(
+          idx!==0 &&<div className='flex flex-col items-center  gap-1.5'>
             <div className='h-44 w-44'>
             {loading && <SkeletonImage height={'100%'} width={'100%'}  />} 
               <img src={member.image} onLoad={()=> setLoading(false)} alt={member.name} className={`rounded-full h-full w-full object-cover object-top ${loading?'hidden':'block'}`} />
