@@ -2,9 +2,9 @@ import React from 'react'
 import ContentLoader from 'react-content-loader';
 
 
-const SkeletonImage = ({width}) => {
+const SkeletonImage = () => {
   return (
-    <ContentLoader  width={'100%'}>
+    <ContentLoader  >
       <rect x="0" y="0" rx="5" ry="5" width={'100%'} height={'100%'} />
     </ContentLoader>
   )

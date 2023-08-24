@@ -21,7 +21,7 @@ const DirectorMessage = () => {
               <p className={`text-normal ${idx === 0?'font-semibold mt-4':''}  text-justify text-[#19191d]`}>{data}</p>
             ))}
           </div>
-          <img src={DirectorImage} className='directormessage' style={{width:"46%"}} alt="Director DBATU" />
+          <img src={DirectorImage}  className='w-[420px] h-auto rounded overflow-hidden'  alt="Director DBATU" />
         </div>
       </div>
     </div>
