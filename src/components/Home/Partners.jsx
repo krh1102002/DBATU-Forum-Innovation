@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from 'react-reveal/Fade'
+import { Fade } from "react-awesome-reveal";
 import "swiper/css";
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,7 +24,7 @@ export default function Partner() {
   
   return (
     <>
-    <Fade top>
+    <Fade direction="up" triggerOnce={true}>
     <div className="container py-4">
       <h3 className="valued">Valued Partner</h3>
     </div >

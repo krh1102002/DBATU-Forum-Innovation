@@ -1,21 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import dbatuforum from '../images/workinprogress.png'
 
 const IncubatedStartUps = () => {
-  const incubatedstartups = [
-    {
-      "name": "J",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
-      "designation": ""
-    },
-    {
-      "name": "",
-      "image": "https://tse4.mm.bing.net/th?id=OIP.Z5BlhFYs_ga1fZnBWkcKjQHaHz",
-      "designation": ""
-    },
-  ]
-  const [loading,setLoading] = useState(true)
+  
   return (
     <>
       <Helmet>

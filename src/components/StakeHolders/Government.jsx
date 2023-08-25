@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { government } from '../../Data/StakeHolders'
 import banner from '../images/governmentbanner.png'
 import { Helmet } from 'react-helmet';
-
+import '../style.css'
 const Government = () => {
   const [loading,setLoading] = useState(true);
   const handleLoad = () =>{
@@ -24,7 +24,7 @@ const Government = () => {
               <p className='text-base  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src={banner} onLoad={handleLoad} alt="government" className={`${loading?'non':'block'}`}/>
+          <img src={banner} onLoad={handleLoad}  alt="government" style={{width:'20%'}} className={`${loading?'non':'block'}`}/>
         </div>
       </div>
     </div>

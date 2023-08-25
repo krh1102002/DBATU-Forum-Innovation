@@ -29,7 +29,7 @@
   height: 2px;
   top: 100%;
   left: 0;
-  background: #749BC2;
+  background: #b0e7ff;
   transition: transform 0.3s linear;
   transform: scaleX(0);
   transform-origin: right;
@@ -132,12 +132,12 @@
 
 @media (max-width: 420px) {
   .valued {
-    display: flex;
-    justify-content: center;
-    font-size: 23px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #192f59;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    color: #192f59 !important;
   }
   .swiper {
     max-height: 145px;
@@ -185,6 +185,9 @@
   .logo12 {
     width: 52% !important;
     margin-top: 13px !important;
+  }
+  .img11{
+    width: 100% !important;
   }
 }
 @media (min-width: 998px) {

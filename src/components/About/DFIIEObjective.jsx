@@ -2,7 +2,7 @@ import React from 'react'
 import { DfiieObjective} from '../../Data/About'
 import dbatuforum from '../images/objective.png'
 import { Helmet } from 'react-helmet'
-
+import "../style.css"
 const DFIIEObjective = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const DFIIEObjective = () => {
               <p className='text-normal  text-justify text-[#19191d]'>{data}</p>
               ))}
           </div>
-          <img src={dbatuforum} width={"358px"} alt="About DFIIE" />
+          <img src={dbatuforum} width={"35%"} className='img11' alt="About DFIIE" />
         </div>
       </div>
     </div>

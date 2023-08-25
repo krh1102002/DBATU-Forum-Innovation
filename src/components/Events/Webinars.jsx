@@ -10,7 +10,7 @@ const Webinars = () => {
       <div className='w-full h-full'>
         <img 
           src={hackathon1} alt="Ideathon / Hackathon / Stereothon"
-          className={`w-full h-96 object-cover ${loading?'hidden':'block'}`}
+          className={`w-full h-100 object-cover ${loading?'hidden':'block'}`}
           onLoad={()=>setLoading(false)}
         />
         {loading && <SkeletonImage height={'24rem'} width={'100%'}  />} 

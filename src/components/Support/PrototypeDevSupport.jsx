@@ -12,7 +12,7 @@ const PrototypeDevSupport = () => {
       <Helmet>
         <title>Prototype Development Support | DFIIE</title>
       </Helmet>
-      <div className='w-full h-94'>
+      <div className='w-full h-100'>
         <img 
           src={imgs}alt="Market Connect"
           className={`w-full h-full object-cover ${loading?'hidden':'block'}`}

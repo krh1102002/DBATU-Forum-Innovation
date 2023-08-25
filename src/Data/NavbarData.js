@@ -72,7 +72,7 @@ export const elements = [
                 path:"/stakeholders/ecosystem"
             },
             {
-                name:"R & Institutions",
+                name:"R & D Institutions",
                 path:"/stakeholders/institutions"
             },
             {

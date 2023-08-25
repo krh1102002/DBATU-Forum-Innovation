@@ -24,11 +24,14 @@ export const mission = [
 
 export const vCMessage = [
     "Dear All,",
-    "I am delighted to welcome you all to our DBATU Forum of Innovation, Incubation & Enterprise (DFIIE) - Incubation Centre. As the Chairman of the Centre, I am honored to lead a team of dedicated professionals who are passionate about supporting and fostering innovation and entrepreneurship.",
-    "Our Incubation Centre provides a platform for tech start-ups to develop and bring their ideas to market. We offer state-of-the-art facilities, access to funding, mentorship, and networking opportunities to help entrepreneurs turn their ideas into successful businesses.",
-    "We firmly believe that technology is the future, and we are committed to supporting those who share our vision. We strive to create an environment that fosters creativity, innovation, and collaboration, where entrepreneurs can focus on building their businesses and realizing their full potential.",
-    "We are excited to welcome you to our Incubation Centre and look forward to working with you to bring your ideas to life. Together, we can create a better future through technology.",
-    "Best regards,"
+    "DBATU Forum of Innovation, Incubation & Enterprise (DFIIE) is committed to nurturing future-leaders and entrepreneurs, who will power their organizations, create innovations in products and services in the emerging economies. The focus of entrepreneurship is unique at DFIIE since it is also a core value that we carry. Entrepreneurship is one of the key building blocks of the institute and with that approach we have also created a Business Incubator, supported by the Maharashtra State Innovation Society, Government of Maharashtra. ",
+
+    "DFIIE provides freedom to students and entrepreneurs to grow with institutional support which they need to explore for their entrepreneurial ambitions. We offer state-of-the-art facilities, access to funding, mentorship, and networking opportunities to help entrepreneurs turn their ideas into successful businesses. We firmly believe that technology is the future, and we are committed to supporting those who share our vision. We strive to create an environment that fosters creativity, innovation, and collaboration, where entrepreneurs can focus on building their businesses and realizing their full potential. ",
+    
+    "To have a positive impact on our nation and the world of business, creating jobs through entrepreneurship, fostering innovation and creating economic-value in the region, we endeavour through our curriculum efforts on entrepreneurship - fostering and outlook to create such a socially responsible impact through this platform.",
+    
+    "We welcome you into our world of startup & entrepreneurship through this platform. "
+    
 ]
 export const vCData = [
     "Prof. (Dr.) K. V. Kale,",

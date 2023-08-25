@@ -11,7 +11,7 @@ const LegalSupport = () => {
       <Helmet>
         <title>Legal Support | DFIIE</title>
       </Helmet>
-      <div className='w-full h-96'>
+      <div className='w-full h-100'>
         <img 
           src={legal}
           alt="LegalSupport"

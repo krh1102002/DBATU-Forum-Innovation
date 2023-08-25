@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { marketConnect } from '../../Data/Support'
+import { networkingSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
 import imgs from '../images/mentoring.png'
@@ -23,8 +23,8 @@ const MentoringSupport = () => {
 
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
-      <h2 className='py-4 text-2xl font-semibold text-center'>Market Connect</h2>
-        {marketConnect.map((data,idx) =>{
+      <h2 className='py-4 text-2xl font-semibold text-center'>Mentoring Support</h2>
+        {networkingSupport.map((data,idx) =>{
           if(idx === 0){
             return(
               <p className='text-lg py-4'>{data}</p>
