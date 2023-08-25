@@ -39,7 +39,7 @@ const HomePage = () => {
       <ScrollTrigger onEnter={()=> setCountUp(true)} >
       <div className='flex px-4 py-4 gap-4 flex-wrap items-center justify-center'>
         {data.map((item) =>(
-          <div className='md:w-[250px] w-[320px] border bg-blue-800 text-white p-2 rounded'>
+          <div className='md:w-[250px] w-[320px] border  text-white p-2 rounded' style={{backgroundColor:"#033d8b"}}>
             <h4 className='text-center md:text-3xl text-xl font-semibold font-mono'>
               {countUp &&<CountUp start = {0} end={item.total} delay={0} duration={3.5} />}+
             </h4>

@@ -14,7 +14,7 @@ const Vcmessageforhome = () => {
             <Fade direction='left' triggerOnce={true}>
               <img
                 src={vcImage}
-                className="lg:w-[1200px]  h-full w-full object-cover rounded-full"
+                className="md:w-[1038px]  h-full w-full object-cover rounded-full"
                 alt="vice chancler"
               />
             </Fade>
@@ -45,7 +45,7 @@ const Vcmessageforhome = () => {
             <Fade direction='right' triggerOnce={true}>
               <img
                 src={directorImg}
-                className="w-full md:hidden block rounded-full"
+                className="w-full rounded-full h-full  object-cover md:hidden block"
                 alt="vice chancler"
               />
             </Fade>

@@ -3,17 +3,20 @@ import MainLayout from '../layout/Main.layout'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import SkeletonImage from '../components/SkeletonImage';
 import { Helmet } from 'react-helmet';
-import banner1 from '../components/images/homeBanner1.png'
-import banner2 from '../components/images/homeBanner2.png'
+import banner1 from '../components/images/homeBanner1.jpg'
+import banner2 from '../components/images/homeBanner2.jpg'
 import banner3 from '../components/images/homeBanner3.jpg'
-import banner4 from '../components/images/homeBanner4.png'
-import banner5 from '../components/images/homeBanner5.png'
+import banner4 from '../components/images/homeBanner4.jpg'
+import banner5 from '../components/images/homeBanner5.jpg'
+import banner6 from '../components/images/homeBanner6.jpg'
+import banner7 from '../components/images/homeBanner7.jpg'
+import banner8 from '../components/images/homeBanner8.jpg'
 
 
 const Gallery = () => {
   const [loading,setLoading] = useState(true);
   const images = [
-    banner1,banner2,banner3,banner4,banner5
+    banner1,banner2,banner3,banner4,banner5,banner6,banner7,banner8
   ]
 
   return (

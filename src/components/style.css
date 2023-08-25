@@ -3,7 +3,9 @@
   height: 100%;
   max-height: 560px;
 }
-
+.textFamily{
+  font-family: 'Philosopher', sans-serif;
+  }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -53,9 +55,13 @@
 }
 
 @media (max-width: 898px) {
+  
   .background-banner {
     background-position: 95% 35%, -3% 1%;
     background-size: 40%, 50%;
+  }
+  .smallwidth{
+    width: 100% !important;
   }
   .vcimg {
     width: 43% !important;
