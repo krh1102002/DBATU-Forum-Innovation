@@ -25,9 +25,9 @@ export default function Partner() {
   return (
     <>
     <Fade direction="up" triggerOnce={true}>
-    <div className="container py-4">
-      <h3 className="valued">Valued Partner</h3>
-    </div >
+      <div className="container py-4">
+        <h3 className='w-full text-[#192f59] font-semibold text-3xl text-center'>Valued Partner</h3>
+      </div >
       <div className="px-8 py-4 flex justify-center items-center">
         <Swiper
           slidesPerView={1}

@@ -57,6 +57,9 @@
     background-position: 95% 35%, -3% 1%;
     background-size: 40%, 50%;
   }
+  .swiper{
+    max-height: 280px;
+  }
   .vcimg {
     width: 43% !important;
   }
@@ -139,8 +142,8 @@
     margin-bottom: 16px !important;
     color: #192f59 !important;
   }
-  .swiper {
-    max-height: 145px;
+  .swiper{
+    max-height: 160px;
   }
   .directormessage {
     font-size: 22px !important;

@@ -52,7 +52,6 @@ const HomePage = () => {
       </ScrollTrigger>
       <Vcmessageforhome/>
       <Partner/>
-        
     </div>
   )
 }
