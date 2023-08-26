@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { productDevelopmentSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import imgs from '../images/prototype development center.png'
+import imgs from '../images/prototype.jpg'
 
 const PrototypeDevSupport = () => {
   const [loading,setLoading] = useState(true)

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { directorData, directorMessage } from '../../Data/About'
-import DirectorImage from '../images/DirectorLarge.jpg'
+import DirectorImage from '../images/directorAboutImg.jpg'
 
 const DirectorMessage = () => {
   return (
@@ -21,7 +21,7 @@ const DirectorMessage = () => {
               <p className={`text-normal ${idx === 0?'font-semibold mt-4':''}  text-justify text-[#19191d]`}>{data}</p>
             ))}
           </div>
-          <img src={DirectorImage}  className='w-[420px] h-auto rounded overflow-hidden'  alt="Director DBATU" />
+          <img src={DirectorImage}  className='w-full h-auto rounded overflow-hidden'  alt="Director DBATU" />
         </div>
       </div>
     </div>

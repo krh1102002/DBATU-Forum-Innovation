@@ -3,6 +3,11 @@
   height: 100%;
   max-height: 560px;
 }
+
+.newsletter-text:hover{
+  color:#192f59;
+}
+
 .textFamily{
   font-family: 'Philosopher', sans-serif;
   }
@@ -59,6 +64,9 @@
   .background-banner {
     background-position: 95% 35%, -3% 1%;
     background-size: 40%, 50%;
+  }
+  .swiper{
+    max-height: 280px;
   }
   .smallwidth{
     width: 100% !important;
@@ -137,6 +145,9 @@
 }
 
 @media (max-width: 420px) {
+  .widthwork{
+    width: 100% !important;
+  }
   .valued {
     display: flex !important;
     justify-content: center !important;
@@ -254,4 +265,10 @@
   color: #212cc9;
   background-color: #fff;
   border-color: #212cc9;
+}
+
+@media (min-width:1024px) {
+  .container{
+    max-width: 1310px;
+  }
 }

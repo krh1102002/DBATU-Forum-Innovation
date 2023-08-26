@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {BiChevronDown, BiChevronUp} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
-import logo from './images/logo (2).png'
+import logo from './images/logo2.png'
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
 import { elements } from '../Data/NavbarData'

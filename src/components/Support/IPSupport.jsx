@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { intellectualPropertyRight } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import ip from "../images/ipsupport.png"
+import ip from "../images/ip.jpg"
 const IPSupport = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)

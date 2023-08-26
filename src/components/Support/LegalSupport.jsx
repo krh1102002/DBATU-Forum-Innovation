@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { legalSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import legal from '../images/legalsupport.png'
+import legal from '../images/legal.jpg'
 const LegalSupport = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)

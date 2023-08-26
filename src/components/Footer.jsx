@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './images/logo (2).png'
+import logo from './images/logo2.png'
 import { elements } from '../Data/FooterData'
 import { Link } from 'react-router-dom'
 import { BiCopyright } from 'react-icons/bi'

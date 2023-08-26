@@ -2,19 +2,21 @@ import React from 'react'
 import { valuedPartner } from '../../Data/StakeHolders'
 import { Helmet } from 'react-helmet'
 import '../style.css'
-import img1 from "../images/boudhik.png"
+import img1 from "../images/boudhik.jpg"
 import img2 from "../images/csmss.jpg"
-import img3 from "../images/deogiri.png"
+import img3 from "../images/deogiri.jpg"
 import img4 from "../images/cluster.jpg"
-import img5 from "../images/wadhwani.png"
-import img6 from "../images/sibic.png"
+import img5 from "../images/wadhwani.jpg"
+import img6 from "../images/sibic.jpg"
 import img7 from "../images/pccode.jpg"
 import img8 from "../images/netrarit.jpg"
 import img9 from "../images/mv.jpg"
-import img10 from "../images/ena.png"
+import img10 from "../images/ena.jpg"
+import img11 from "../images/chamber.jpg"
+import img12 from "../images/aic.jpg"
 import Image from '../Image'
 const ValuedPartner = () => {
-  const images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10]
+  const images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12]
   return (
     
     <>

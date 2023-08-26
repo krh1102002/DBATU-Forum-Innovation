@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from './images/logo (2).png'
+import logo from './images/logo2.png'
 import {FaBars} from 'react-icons/fa'
 import { NavbarSm } from './Navbar';
 
