@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { InvestorMeet_Fest } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-import investormeet1 from '../images/investor.jpg'
+import investormeet1 from '../images/investormeet.jpg'
 const InvestorMeet = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)

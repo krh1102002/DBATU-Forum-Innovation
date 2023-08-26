@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { workShopAndSeminars } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-import workshop from '.././images/workshopandseminar.png'
+import workshop from '.././images/workshopandseminar.jpg'
 
 const WorkShopAndSeminars = () => {
   const [loading,setLoading] = useState(true)

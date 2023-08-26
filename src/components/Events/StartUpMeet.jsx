@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { startupMeet } from '../../Data/Events'
 import SkeletonImage from '../SkeletonImage'
-import startup1 from '../images/startup.jpg'
+import startup1 from '../images/startupmeet.jpg'
 const StartUpMeet = () => {
   const [loading,setLoading] = useState(true)
   console.log(loading)
@@ -18,7 +18,7 @@ const StartUpMeet = () => {
 
       </div>
       <ul className='m-auto list-disc md:px-12 px-6 py-4'>
-      <h2 className='py-4 text-2xl font-semibold text-center'>Investor Meet / Investor Fest</h2>
+      <h2 className='py-4 text-2xl font-semibold text-center'>Start Up Meet</h2>
         {startupMeet.map((data,idx) =>{
           if(idx === 0){
             return(

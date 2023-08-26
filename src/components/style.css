@@ -4,6 +4,13 @@
   max-height: 560px;
 }
 
+.newsletter-text:hover{
+  color:#192f59;
+}
+
+.textFamily{
+  font-family: 'Philosopher', sans-serif;
+  }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -53,6 +60,7 @@
 }
 
 @media (max-width: 898px) {
+  
   .background-banner {
     background-position: 95% 35%, -3% 1%;
     background-size: 40%, 50%;
@@ -131,6 +139,9 @@
 }
 
 @media (max-width: 420px) {
+  .widthwork{
+    width: 100% !important;
+  }
   .valued {
     display: flex !important;
     justify-content: center !important;
@@ -139,8 +150,8 @@
     margin-bottom: 16px !important;
     color: #192f59 !important;
   }
-  .swiper {
-    max-height: 145px;
+  .swiper{
+    max-height: 160px;
   }
   .directormessage {
     font-size: 22px !important;
@@ -248,4 +259,10 @@
   color: #212cc9;
   background-color: #fff;
   border-color: #212cc9;
+}
+
+@media (min-width:1024px) {
+  .container{
+    max-width: 1310px;
+  }
 }

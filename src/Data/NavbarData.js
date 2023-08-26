@@ -163,12 +163,16 @@ export const elements = [
         name:"News & Announcement",
         path:'/news&announcement'
     },
-    {
-        name:"Contact",
-        path:'/contact'
-    },
+   
     {
         name:"Gallery",
         path:'/gallery'
-    }
+    },{
+        name:"Apply Here",
+        path:"https://forms.gle/vrkf1uT1W4dALhjw6"
+    },
+    {
+        name:"Contact Us",
+        path:'/contact'
+    },
 ]

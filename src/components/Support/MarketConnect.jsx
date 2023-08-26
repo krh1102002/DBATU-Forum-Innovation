@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { mentoringSupport } from '../../Data/Support'
 import SkeletonImage from '../SkeletonImage'
 import { Helmet } from 'react-helmet'
-import imgs from '../images/markect connect.png'
+import imgs from '../images/marketC.jpg'
 
 const MarketConnect = () => {
   const [loading,setLoading] = useState(true)
