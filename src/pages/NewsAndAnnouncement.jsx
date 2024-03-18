@@ -5,6 +5,7 @@ import news1 from "../components/images/World-Entrepreneurship-Day.png";
 import news2 from "../components/images/Idea-To-Enterprise.png";
 import Image from "../components/Image";
 import augustVolume1 from "../components/images/augustVolume1.png";
+import september1 from "../components/images/newsletter-2.png";
 import dbatuforum from '../components/images/workinprogress.png'
 
 const NewsAndAnnouncement = () => {
@@ -13,6 +14,11 @@ const NewsAndAnnouncement = () => {
       img: augustVolume1,
       newslettername: "DFIIE Newsletter Volume-1 (August 2023)",
       path: "https://drive.google.com/file/d/1gTJvO6KE4LEj8th1Ez4UeOlm2eernEGl/view",
+    },
+    {
+      img: september1,
+      newslettername: "DFIIE Newsletter Volume-2 (September 2023)",
+      path: "https://drive.google.com/file/d/1GxjI95QYpRbfkj6FbQ9mtqfx0MF9uIOy/view?usp=sharing",
     },
    
     
